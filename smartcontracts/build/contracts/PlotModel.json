@@ -1,0 +1,172 @@
+{
+  "contractName": "PlotModel",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/PlotModel.sol\":\"PlotModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/PlotModel.sol\":{\"keccak256\":\"0x68769ae7e21fa2fdbcbdd22a0754108d3e9a9d28260a5e8ebfb719fe414ebcad\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://6fd149d59e68da712207a24ea556e8496b05ecb52cd95ce48cfcd915fb4b54ea\",\"dweb:/ipfs/QmUCCoy7MBueDxeGbe5f6XSpxSdMYKpBY9cNcsbNZ8v4Ww\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122062b00c576edd0a70011468ef5149c1688577129b9ffc603032d91c712524f05664736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122062b00c576edd0a70011468ef5149c1688577129b9ffc603032d91c712524f05664736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "73:144:17:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "73:144:17:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ncontract PlotModel {\n    struct Plot {\n        uint maxFlightAltitude;\n        uint minFlightAltitude;\n        string acceptedPesticide;\n    }\n}",
+  "sourcePath": "/home/sergio/Documentos/sergio/projects/drones/smartcontracts/contracts/models/PlotModel.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/models/PlotModel.sol",
+    "exportedSymbols": {
+      "PlotModel": [
+        2071
+      ]
+    },
+    "id": 2072,
+    "license": "UNLICENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2063,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:32:17"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "PlotModel",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 2071,
+        "linearizedBaseContracts": [
+          2071
+        ],
+        "name": "PlotModel",
+        "nameLocation": "82:9:17",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "PlotModel.Plot",
+            "id": 2070,
+            "members": [
+              {
+                "constant": false,
+                "id": 2065,
+                "mutability": "mutable",
+                "name": "maxFlightAltitude",
+                "nameLocation": "125:17:17",
+                "nodeType": "VariableDeclaration",
+                "scope": 2070,
+                "src": "120:22:17",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2064,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "120:4:17",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2067,
+                "mutability": "mutable",
+                "name": "minFlightAltitude",
+                "nameLocation": "157:17:17",
+                "nodeType": "VariableDeclaration",
+                "scope": 2070,
+                "src": "152:22:17",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2066,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "152:4:17",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2069,
+                "mutability": "mutable",
+                "name": "acceptedPesticide",
+                "nameLocation": "191:17:17",
+                "nodeType": "VariableDeclaration",
+                "scope": 2070,
+                "src": "184:24:17",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2068,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "184:6:17",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Plot",
+            "nameLocation": "105:4:17",
+            "nodeType": "StructDefinition",
+            "scope": 2071,
+            "src": "98:117:17",
+            "visibility": "public"
+          }
+        ],
+        "scope": 2072,
+        "src": "73:144:17",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:178:17"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-06-16T18:38:46.504Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

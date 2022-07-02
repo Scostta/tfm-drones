@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: UNLICENCED
+pragma solidity >=0.4.22 <0.9.0;
+
+contract PlotModel {
+    struct Plot {
+        string ownerName;
+        string acceptedPesticide;
+        uint256 allowedMaxFlightAltitude;
+        uint256 allowedMinFlightAltitude;
+        address owner;
+    }
+}

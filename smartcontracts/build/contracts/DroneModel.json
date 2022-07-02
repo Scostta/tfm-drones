@@ -1,0 +1,181 @@
+{
+  "contractName": "DroneModel",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/DroneModel.sol\":\"DroneModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/DroneModel.sol\":{\"keccak256\":\"0x76471fa91082f91b7cd0e093f40ae0d28488c92f75ed0c2d36baf670426976d7\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://21ccb914e18ebae77f88f13693f6c8b344235245f8353181bcf8d5072278a654\",\"dweb:/ipfs/QmQ4vSW7HYkXsC3UrufyZpyiPe1Nk75y5U7Qnmu7jh51VE\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212203bad2fac728fec97f77071fb0fee8be6a838ce7eac6064b307730c81b863e31264736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212203bad2fac728fec97f77071fb0fee8be6a838ce7eac6064b307730c81b863e31264736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "73:141:16:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "73:141:16:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ncontract DroneModel {\n    struct Drone {\n        uint maxFlightAltitude;\n        uint minFlightAltitude;\n        string[] pesticides;\n    }\n}",
+  "sourcePath": "/home/sergio/Documentos/sergio/projects/drones/smartcontracts/contracts/models/DroneModel.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/models/DroneModel.sol",
+    "exportedSymbols": {
+      "DroneModel": [
+        2061
+      ]
+    },
+    "id": 2062,
+    "license": "UNLICENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2052,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:32:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "DroneModel",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 2061,
+        "linearizedBaseContracts": [
+          2061
+        ],
+        "name": "DroneModel",
+        "nameLocation": "82:10:16",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "DroneModel.Drone",
+            "id": 2060,
+            "members": [
+              {
+                "constant": false,
+                "id": 2054,
+                "mutability": "mutable",
+                "name": "maxFlightAltitude",
+                "nameLocation": "127:17:16",
+                "nodeType": "VariableDeclaration",
+                "scope": 2060,
+                "src": "122:22:16",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2053,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "122:4:16",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2056,
+                "mutability": "mutable",
+                "name": "minFlightAltitude",
+                "nameLocation": "159:17:16",
+                "nodeType": "VariableDeclaration",
+                "scope": 2060,
+                "src": "154:22:16",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2055,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "154:4:16",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2059,
+                "mutability": "mutable",
+                "name": "pesticides",
+                "nameLocation": "195:10:16",
+                "nodeType": "VariableDeclaration",
+                "scope": 2060,
+                "src": "186:19:16",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                  "typeString": "string[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 2057,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "186:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "id": 2058,
+                  "nodeType": "ArrayTypeName",
+                  "src": "186:8:16",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                    "typeString": "string[]"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Drone",
+            "nameLocation": "106:5:16",
+            "nodeType": "StructDefinition",
+            "scope": 2061,
+            "src": "99:113:16",
+            "visibility": "public"
+          }
+        ],
+        "scope": 2062,
+        "src": "73:141:16",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:175:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-06-16T18:38:46.504Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
