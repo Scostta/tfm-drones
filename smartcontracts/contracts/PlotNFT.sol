@@ -31,6 +31,7 @@ contract PlotNFT is ERC721, PlotModel {
         address owner = msg.sender;
         plots.push(
             Plot(
+                _currentTokenId.current(),
                 _ownerName,
                 _pesticide,
                 _allowedMaxFlightAltitude,

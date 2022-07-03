@@ -21,6 +21,10 @@ contract Drone is DroneNFT {
         return result;
     }
 
+    function getDrones() external view returns (Drone[] memory) {
+        return drones;
+    }
+
     function getDrone(uint256 _index) external view returns (Drone memory) {
         return drones[_index];
     }

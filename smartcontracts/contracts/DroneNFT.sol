@@ -34,6 +34,7 @@ contract DroneNFT is ERC721, DroneModel {
         address owner = msg.sender;
         drones.push(
             Drone(
+                _currentTokenId.current(),
                 _ownerName,
                 _model,
                 _maxFlightAltitude,

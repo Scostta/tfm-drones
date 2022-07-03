@@ -1,7 +1,7 @@
 {
   "contractName": "PlotModel",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/PlotModel.sol\":\"PlotModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/PlotModel.sol\":{\"keccak256\":\"0xb04141fd0a7a2ab0d88add1997b0c5f7a3e87f703b69b99f1c004bc44158ebd8\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://598fd613c1511935563601f789cf7ed86078227b4ed52313cc2e2f64571014fe\",\"dweb:/ipfs/QmV53154GWnXjGh2HwUj4xJUqzVPSihDpyttL94MTg5XAJ\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/PlotModel.sol\":\"PlotModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/PlotModel.sol\":{\"keccak256\":\"0x61f342b1a58afca7680ccbeb23805ce7b54ec13e3945bb936fc84d6226361653\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://e3b1529088eb3b68c92e2e781e50405b1a7f4e928a8007235e2fb07e52c12c7f\",\"dweb:/ipfs/QmS7H9VNAS3rqFUkSMsDG8ttdfSuqhxko8D5Nsf1qZLi5K\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -9,21 +9,21 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ninterface PlotModel {\n    struct Plot {\n        string ownerName;\n        string acceptedPesticide;\n        uint256 allowedMaxFlightAltitude;\n        uint256 allowedMinFlightAltitude;\n        address owner;\n    }\n}\n",
+  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ninterface PlotModel {\n    struct Plot {\n        uint256 id;\n        string ownerName;\n        string acceptedPesticide;\n        uint256 allowedMaxFlightAltitude;\n        uint256 allowedMinFlightAltitude;\n        address owner;\n    }\n}\n",
   "sourcePath": "/home/sergio/Documentos/sergio/projects/drones/smartcontracts/contracts/models/PlotModel.sol",
   "ast": {
     "absolutePath": "project:/contracts/models/PlotModel.sol",
     "exportedSymbols": {
       "PlotModel": [
-        3025
+        2344
       ]
     },
-    "id": 3026,
+    "id": 2345,
     "license": "UNLICENCED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3013,
+        "id": 2330,
         "literals": [
           "solidity",
           ">=",
@@ -34,7 +34,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "39:32:22"
+        "src": "39:32:18"
       },
       {
         "abstract": false,
@@ -43,27 +43,54 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": true,
-        "id": 3025,
+        "id": 2344,
         "linearizedBaseContracts": [
-          3025
+          2344
         ],
         "name": "PlotModel",
-        "nameLocation": "83:9:22",
+        "nameLocation": "83:9:18",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "PlotModel.Plot",
-            "id": 3024,
+            "id": 2343,
             "members": [
               {
                 "constant": false,
-                "id": 3015,
+                "id": 2332,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "129:2:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 2343,
+                "src": "121:10:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2331,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "121:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2334,
                 "mutability": "mutable",
                 "name": "ownerName",
-                "nameLocation": "128:9:22",
+                "nameLocation": "148:9:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3024,
-                "src": "121:16:22",
+                "scope": 2343,
+                "src": "141:16:18",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -71,10 +98,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 3014,
+                  "id": 2333,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "121:6:22",
+                  "src": "141:6:18",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -84,13 +111,13 @@
               },
               {
                 "constant": false,
-                "id": 3017,
+                "id": 2336,
                 "mutability": "mutable",
                 "name": "acceptedPesticide",
-                "nameLocation": "154:17:22",
+                "nameLocation": "174:17:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3024,
-                "src": "147:24:22",
+                "scope": 2343,
+                "src": "167:24:18",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -98,10 +125,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 3016,
+                  "id": 2335,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "147:6:22",
+                  "src": "167:6:18",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -111,13 +138,13 @@
               },
               {
                 "constant": false,
-                "id": 3019,
+                "id": 2338,
                 "mutability": "mutable",
                 "name": "allowedMaxFlightAltitude",
-                "nameLocation": "189:24:22",
+                "nameLocation": "209:24:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3024,
-                "src": "181:32:22",
+                "scope": 2343,
+                "src": "201:32:18",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -125,10 +152,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3018,
+                  "id": 2337,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "181:7:22",
+                  "src": "201:7:18",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -138,13 +165,13 @@
               },
               {
                 "constant": false,
-                "id": 3021,
+                "id": 2340,
                 "mutability": "mutable",
                 "name": "allowedMinFlightAltitude",
-                "nameLocation": "231:24:22",
+                "nameLocation": "251:24:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3024,
-                "src": "223:32:22",
+                "scope": 2343,
+                "src": "243:32:18",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -152,10 +179,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3020,
+                  "id": 2339,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "223:7:22",
+                  "src": "243:7:18",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -165,13 +192,13 @@
               },
               {
                 "constant": false,
-                "id": 3023,
+                "id": 2342,
                 "mutability": "mutable",
                 "name": "owner",
-                "nameLocation": "273:5:22",
+                "nameLocation": "293:5:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3024,
-                "src": "265:13:22",
+                "scope": 2343,
+                "src": "285:13:18",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -179,10 +206,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 3022,
+                  "id": 2341,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "265:7:22",
+                  "src": "285:7:18",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -193,19 +220,19 @@
               }
             ],
             "name": "Plot",
-            "nameLocation": "106:4:22",
+            "nameLocation": "106:4:18",
             "nodeType": "StructDefinition",
-            "scope": 3025,
-            "src": "99:186:22",
+            "scope": 2344,
+            "src": "99:206:18",
             "visibility": "public"
           }
         ],
-        "scope": 3026,
-        "src": "73:214:22",
+        "scope": 2345,
+        "src": "73:234:18",
         "usedErrors": []
       }
     ],
-    "src": "39:249:22"
+    "src": "39:269:18"
   },
   "compiler": {
     "name": "solc",
@@ -213,7 +240,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-07-03T12:32:21.101Z",
+  "updatedAt": "2022-07-03T18:22:48.614Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

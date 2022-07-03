@@ -21,6 +21,10 @@ contract Plot is PlotNFT {
         return result;
     }
 
+    function getPlots() external view returns (Plot[] memory) {
+        return plots;
+    }
+
     function getPlot(uint256 _index) external view returns (Plot memory) {
         return plots[_index];
     }

@@ -17,8 +17,12 @@ interface PlotInterface is PlotModel {
 contract Manager is JobModel, PlotModel, DroneModel, Ownable {
     DroneInterface droneContract;
     PlotInterface plotContract;
+    uint256 private jobId;
+
+    mapping(address => bool) public isCompany;
 
     constructor() {
+        jobId = 0;
         droneContract = DroneInterface(
             address(0x44E6106733Ba7cbf2ab3B29b20E2d7957689D4b0)
         );
@@ -29,12 +33,32 @@ contract Manager is JobModel, PlotModel, DroneModel, Ownable {
 
     Job[] public jobs;
 
+    modifier onlyCompanyAddress(address _address) {
+        require(
+            isCompany[_address] == true,
+            "No tienes permisos para realizar esta accion"
+        );
+        _;
+    }
+
+    function setCompanyAddress(address _address) external onlyOwner {
+        isCompany[_address] = true;
+    }
+
+    function deleteCompanyAddress(address _address) external onlyOwner {
+        isCompany[_address] = false;
+    }
+
     function setDroneContractAddress(address _address) external onlyOwner {
         droneContract = DroneInterface(_address);
     }
 
     function setPlotContractAddress(address _address) external onlyOwner {
         plotContract = PlotInterface(_address);
+    }
+
+    function getJobs() external view returns (Job[] memory) {
+        return jobs;
     }
 
     function setPendingJob(uint256 _droneId, uint256 _plotId) public {
@@ -46,10 +70,26 @@ contract Manager is JobModel, PlotModel, DroneModel, Ownable {
                 currentDrone.maxFlightAltitude
         );
         require(
-            currentPlot.allowedMinFlightAltitude >=
+            currentPlot.allowedMinFlightAltitude <=
                 currentDrone.minFlightAltitude
         );
 
-        jobs.push(Job(_droneId, _plotId));
+        jobs.push(Job(jobId, _droneId, _plotId, false));
+        jobId++;
+    }
+
+    function acceptJob(uint256 _jobId, address _address)
+        external
+        onlyCompanyAddress(_address)
+    {
+        jobs[_jobId].approved = true;
+    }
+
+    function declineJob(uint256 _jobId, address _address)
+        external
+        onlyCompanyAddress(_address)
+    {
+        delete jobs[_jobId];
+        jobId--;
     }
 }
