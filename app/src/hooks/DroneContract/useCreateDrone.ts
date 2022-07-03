@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Drone } from '../globalTypes';
+import { Drone } from '../../globalTypes';
 import { useDroneContract } from './useDroneContract';
 import { useGetUserDrones } from './useGetUserDrones';
 
@@ -11,12 +11,28 @@ export const useCreateDrone = (callback?: () => void) => {
   const cleanError = () => errorSet(null);
 
   const create = (drone: Drone) => {
-    const { model, maxFlightAltitude, minFlightAltitude, pesticides } = drone;
+    const {
+      ownerName,
+      model,
+      maxFlightAltitude,
+      minFlightAltitude,
+      pesticides,
+      cost,
+      velocity,
+    } = drone;
 
     loadingSet(true);
     const { contract } = useDroneContract();
     contract
-      .mintNewDrone(maxFlightAltitude, minFlightAltitude, pesticides)
+      .mintNewDrone(
+        ownerName,
+        model,
+        maxFlightAltitude,
+        minFlightAltitude,
+        pesticides,
+        cost,
+        velocity
+      )
       .then((res: any) => res.wait())
       .then(() => getDrones())
       .then((res: any) => {
@@ -36,5 +52,6 @@ export const useCreateDrone = (callback?: () => void) => {
     loading,
     create,
     cleanError,
+    setError: errorSet,
   };
 };

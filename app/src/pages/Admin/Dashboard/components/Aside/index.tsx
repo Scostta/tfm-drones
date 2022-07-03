@@ -21,20 +21,36 @@ export const Aside: React.FC = () => {
             <Image src={DroneImage}></Image>
             <Flex direction="column" gap={4}>
               <Flex direction="column">
+                <Text fontWeight="bold">Owner Name:</Text>
+                <Text>{selectedDron.ownerName}</Text>
+              </Flex>
+              <Flex direction="column">
+                <Text fontWeight="bold">Owner Address</Text>
+                <Text>{selectedDron.owner}</Text>
+              </Flex>
+              <Flex direction="column">
                 <Text fontWeight="bold">Model:</Text>
                 <Text>{selectedDron.model}</Text>
               </Flex>
               <Flex direction="column">
-                <Text fontWeight="bold">Max. Flight Altitude</Text>
+                <Text fontWeight="bold">Max. Flight Altitude:</Text>
                 <Text>{selectedDron.maxFlightAltitude}</Text>
               </Flex>
               <Flex direction="column">
-                <Text fontWeight="bold">Min. Flight Altitude</Text>
+                <Text fontWeight="bold">Min. Flight Altitude:</Text>
                 <Text>{selectedDron.minFlightAltitude}</Text>
               </Flex>
               <Flex direction="column">
-                <Text fontWeight="bold">Pesticides</Text>
+                <Text fontWeight="bold">Pesticides:</Text>
                 <Text>{selectedDron.pesticides?.join(', ')}</Text>
+              </Flex>
+              <Flex direction="column">
+                <Text fontWeight="bold">Cost:</Text>
+                <Text>{selectedDron.cost}</Text>
+              </Flex>
+              <Flex direction="column">
+                <Text fontWeight="bold">Velocity:</Text>
+                <Text>{selectedDron.velocity}</Text>
               </Flex>
             </Flex>
           </Flex>

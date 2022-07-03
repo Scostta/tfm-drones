@@ -1,9 +1,9 @@
 import { BigNumber, Contract } from 'ethers';
 import { useAtom } from 'jotai';
 import { useEffect, useState } from 'react';
-import { dronesAtom } from '../store/drones';
+import { dronesAtom } from '../../store/drones';
 import { useDroneContract } from './useDroneContract';
-import { useMetamask } from './useMetamask';
+import { useMetamask } from '../useMetamask';
 
 const formatDrones = async (dronesFromContract: any, contract: Contract) => {
   if (!dronesFromContract || !contract) return [];
@@ -12,9 +12,14 @@ const formatDrones = async (dronesFromContract: any, contract: Contract) => {
       const drone = await contract.getDrone(BigNumber.from(droneFromContract));
       console.log(drone);
       return {
+        ownerName: drone.ownerName,
+        owner: drone.owner,
+        model: drone.model,
         maxFlightAltitude: drone.maxFlightAltitude.toNumber(),
         minFlightAltitude: drone.minFlightAltitude.toNumber(),
         pesticides: drone.pesticides,
+        cost: drone.cost.toNumber(),
+        velocity: drone.velocity,
       };
     })
   );

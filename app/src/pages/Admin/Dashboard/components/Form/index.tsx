@@ -1,10 +1,10 @@
-import React, { FormEvent, FormEventHandler, useState } from 'react';
+import React, { useState } from 'react';
 // import { Controller } from 'react-hook-form';
 // import { useUsersForm } from './useForm';
 import { Input, FormControl, FormLabel, Select } from '@chakra-ui/react';
 import { Form } from '../../../../../components/core/UI/Form';
 import { Modal } from '../../../../../components/core/UI/Modal';
-import { useCreateDrone } from '../../../../../hooks/useCreateDrone';
+import { useCreateDrone } from '../../../../../hooks/DroneContract/useCreateDrone';
 
 type DroneFormProps = {
   open: boolean;
@@ -39,6 +39,22 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
     >
       <Form>
         <FormControl>
+          <FormLabel>Owner Name</FormLabel>
+          <Input
+            onChange={(e) => handleOnChange('ownerName', e.target.value)}
+            name="ownerName"
+            placeholder="type here"
+          />
+        </FormControl>
+        <FormControl>
+          <FormLabel>Model</FormLabel>
+          <Input
+            onChange={(e) => handleOnChange('model', e.target.value)}
+            name="model"
+            placeholder="type here"
+          />
+        </FormControl>
+        <FormControl>
           <FormLabel>Accepted Pesticides</FormLabel>
           <Select
             onChange={(e) => handleOnChange('pesticides', e.target.value)}
@@ -52,14 +68,6 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
           </Select>
         </FormControl>
         <FormControl>
-          <FormLabel>Model</FormLabel>
-          <Input
-            onChange={(e) => handleOnChange('model', e.target.value)}
-            name="model"
-            placeholder="type here"
-          />
-        </FormControl>
-        <FormControl>
           <FormLabel>Maximum Flight Altitude</FormLabel>
           <Input
             onChange={(e) =>
@@ -67,6 +75,7 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
             }
             name="maxFlightAltitude"
             placeholder="number"
+            type="number"
           />
         </FormControl>
         <FormControl>
@@ -77,8 +86,28 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
             }
             name="minFlightAltitude"
             placeholder="number"
+            type="number"
           />
         </FormControl>
+        <FormControl>
+          <FormLabel>Cost</FormLabel>
+          <Input
+            onChange={(e) => handleOnChange('cost', e.target.value)}
+            name="cost"
+            placeholder="number"
+            type="number"
+          />
+        </FormControl>
+        <FormControl>
+          <FormLabel>Velocity</FormLabel>
+          <Input
+            onChange={(e) => handleOnChange('velocity', e.target.value)}
+            name="velocity"
+            placeholder="number"
+            type="number"
+          />
+        </FormControl>
+
         <FormLabel color="red">{error}</FormLabel>
       </Form>
     </Modal>
