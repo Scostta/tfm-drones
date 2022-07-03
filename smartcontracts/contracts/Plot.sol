@@ -1,44 +1,27 @@
 // SPDX-License-Identifier: UNLICENCED
 pragma solidity >=0.4.22 <0.9.0;
 
-import "./models/PlotModel.sol";
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "./PlotNFT.sol";
 
-contract Plot is ERC721, Ownable, PlotModel {
-    using Counters for Counters.Counter;
-    Counters.Counter private _currentTokenId;
-
-    constructor() ERC721("PLOT", "PLT") {}
-
-    event NewPlotCreated(uint256 id);
-
-    Plot[] public plots;
-
-    function _plotMint(address to) private {
-        uint256 currentId = _currentTokenId.current();
-        _safeMint(to, currentId);
-        _currentTokenId.increment();
-        emit NewPlotCreated(currentId);
+contract Plot is PlotNFT {
+    function getPlotsByOwner(address _owner)
+        external
+        view
+        returns (uint256[] memory)
+    {
+        uint256 plotBalance = balanceOf(_owner);
+        uint256[] memory result = new uint256[](plotBalance);
+        uint256 counter = 0;
+        for (uint256 i = 0; i < plots.length; i++) {
+            if (ownerOf(i) == _owner) {
+                result[counter] = i;
+                counter++;
+            }
+        }
+        return result;
     }
 
-    function mintNewPlot(
-        string memory _ownerName,
-        uint256 _allowedMaxFlightAltitude,
-        uint256 _allowedMinFlightAltitude,
-        string memory _pesticide
-    ) external {
-        address owner = msg.sender;
-        plots.push(
-            Plot(
-                _ownerName,
-                _pesticide,
-                _allowedMaxFlightAltitude,
-                _allowedMinFlightAltitude,
-                owner
-            )
-        );
-        _plotMint(owner);
+    function getPlot(uint256 _index) external view returns (Plot memory) {
+        return plots[_index];
     }
 }

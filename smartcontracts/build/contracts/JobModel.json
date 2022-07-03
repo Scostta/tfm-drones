@@ -1,0 +1,145 @@
+{
+  "contractName": "JobModel",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/JobModel.sol\":\"JobModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/JobModel.sol\":{\"keccak256\":\"0xd430f62265db7dce5c622e478a77d40adacd23979e351511d3dd24e18661c825\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://c5286e1f2c1b7a833fe59f2db9d3090697cb79a19e581d1bbe2e501855756e0d\",\"dweb:/ipfs/QmPqoEbQFzhcYSdaASv4egmge7BfpjLUjEVpVUQJnqQKhm\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ninterface JobModel {\n    struct Job {\n        uint256 droneId;\n        uint256 plotId;\n    }\n}\n",
+  "sourcePath": "/home/sergio/Documentos/sergio/projects/drones/smartcontracts/contracts/models/JobModel.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/models/JobModel.sol",
+    "exportedSymbols": {
+      "JobModel": [
+        287
+      ]
+    },
+    "id": 288,
+    "license": "UNLICENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 281,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:32:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "JobModel",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "id": 287,
+        "linearizedBaseContracts": [
+          287
+        ],
+        "name": "JobModel",
+        "nameLocation": "83:8:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "JobModel.Job",
+            "id": 286,
+            "members": [
+              {
+                "constant": false,
+                "id": 283,
+                "mutability": "mutable",
+                "name": "droneId",
+                "nameLocation": "127:7:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 286,
+                "src": "119:15:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 282,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "119:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 285,
+                "mutability": "mutable",
+                "name": "plotId",
+                "nameLocation": "152:6:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 286,
+                "src": "144:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 284,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "144:7:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Job",
+            "nameLocation": "105:3:4",
+            "nodeType": "StructDefinition",
+            "scope": 287,
+            "src": "98:67:4",
+            "visibility": "public"
+          }
+        ],
+        "scope": 288,
+        "src": "73:94:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:129:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-07-03T12:32:57.405Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

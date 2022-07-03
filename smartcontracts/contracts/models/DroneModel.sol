@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENCED
 pragma solidity >=0.4.22 <0.9.0;
 
-contract DroneModel {
+interface DroneModel {
     struct Drone {
         string ownerName;
         string model;
