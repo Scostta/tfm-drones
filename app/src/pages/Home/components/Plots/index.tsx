@@ -2,14 +2,13 @@ import React from 'react';
 import { Box, Flex, Image, Spinner } from '@chakra-ui/react';
 import PlotImage from '../../../../assets/land.png';
 import { Card } from '../../../../components/core/UI/Card';
-import { useGetUserPlots } from '../../../../hooks/PlotContract/useGetUserPlots';
+import { useGetPlots } from '../../../../hooks/PlotContract/useGetPlots';
 import { useUpdateAtom } from 'jotai/utils';
 import { plotSelectedAtom } from '../../../../store/plots';
 
 export const Plots: React.FC = () => {
-  const { data = [], loading } = useGetUserPlots(true);
+  const { data = [], loading } = useGetPlots(true);
   const selectedPlot = useUpdateAtom(plotSelectedAtom);
-
   return (
     <>
       <Flex flexWrap="wrap" justify="flex-start" gap={4}>
@@ -44,6 +43,7 @@ export const Plots: React.FC = () => {
               <div>
                 Allowed Min Flight Altitude: {plot?.allowedMinFlightAltitude}
               </div>
+              <div>Pesticide: {plot?.pesticide}</div>
             </Flex>
             <Box>
               <Image width="256px" src={PlotImage} />

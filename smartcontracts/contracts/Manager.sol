@@ -24,10 +24,10 @@ contract Manager is JobModel, PlotModel, DroneModel, Ownable {
     constructor() {
         jobId = 0;
         droneContract = DroneInterface(
-            address(0x44E6106733Ba7cbf2ab3B29b20E2d7957689D4b0)
+            address(0xAccf2b735a5Ad02E2Fa818B59eCaE3bd67BE558F)
         );
         plotContract = PlotInterface(
-            address(0xD7C53A5aB24D0D5e083f50A2e520859Ccf0Fe76c)
+            address(0xfE265164872e2A36F5a267A61195C4f523BBE0Dd)
         );
     }
 

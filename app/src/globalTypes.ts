@@ -20,6 +20,7 @@ export type Plot = {
 
 export type Job = {
   id?: number;
-  droneId: string;
-  plotId: string;
+  droneId: number;
+  plotId: number;
+  approved?: boolean;
 };

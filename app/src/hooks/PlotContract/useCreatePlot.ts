@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Plot } from '../../globalTypes';
-import { useGetUserPlots } from './useGetUserPlots';
+import { useGetPlots } from './useGetPlots';
 import { usePlotContract } from './usePlotContract';
 
 export const useCreatePlot = (callback?: () => void) => {
   const [error, errorSet] = useState<string | null>(null);
   const [loading, loadingSet] = useState(false);
-  const { getPlots } = useGetUserPlots();
+  const { getPlots } = useGetPlots();
 
   const cleanError = () => errorSet(null);
 

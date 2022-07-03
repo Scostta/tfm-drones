@@ -53,7 +53,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"getPlot\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"ownerName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"acceptedPesticide\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"allowedMaxFlightAltitude\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"allowedMinFlightAltitude\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"internalType\":\"struct PlotModel.Plot\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Manager.sol\":\"PlotInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x24e0364e503a9bbde94c715d26573a76f14cd2a202d45f96f52134ab806b67b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e12cbaa7378fd9b62280e4e1d164bedcb4399ce238f5f98fc0eefb7e50577981\",\"dweb:/ipfs/QmXRoFGUgfsaRkoPT5bxNMtSayKTQ8GZATLPXf69HcRA51\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"project:/contracts/Manager.sol\":{\"keccak256\":\"0xcab11b5582db4980b6384098544cdc291f533c14b0460d6437fd89028f16963a\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://e2670bf8486f6830128528c8259f6e83bcd17c76b588542a46515d0e91c332ac\",\"dweb:/ipfs/QmfXwfQdiqzHnBo3cqz1pvsrNTHZip228z3hxDU1XcmsgC\"]},\"project:/contracts/models/DroneModel.sol\":{\"keccak256\":\"0x091c7c5571fe0f3372564da93afb0b2326a55365bae574040dee2f4f0c4b34ce\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://35dd50601e99e258b57f03f9725b52c68e2940babdabba9f4f99362a42a81987\",\"dweb:/ipfs/QmNPVAcaDr45nGckuPAvBMVrAd4EpQwoSNZvVZz3ystKT3\"]},\"project:/contracts/models/JobModel.sol\":{\"keccak256\":\"0xd2f56892697b476df2b03d73b077f6f407b2b1db614d13bb2cdc95fa38d6051d\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://56ed3db7a52935f1b1a6e65babfec38418903d32af38f891787c40f92a9a2779\",\"dweb:/ipfs/QmciDyyVPo2vrLZGijNbrUujACt1XdWA7g1pqBCsSFw8HD\"]},\"project:/contracts/models/PlotModel.sol\":{\"keccak256\":\"0x61f342b1a58afca7680ccbeb23805ce7b54ec13e3945bb936fc84d6226361653\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://e3b1529088eb3b68c92e2e781e50405b1a7f4e928a8007235e2fb07e52c12c7f\",\"dweb:/ipfs/QmS7H9VNAS3rqFUkSMsDG8ttdfSuqhxko8D5Nsf1qZLi5K\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"getPlot\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"ownerName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"acceptedPesticide\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"allowedMaxFlightAltitude\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"allowedMinFlightAltitude\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"internalType\":\"struct PlotModel.Plot\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Manager.sol\":\"PlotInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x24e0364e503a9bbde94c715d26573a76f14cd2a202d45f96f52134ab806b67b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e12cbaa7378fd9b62280e4e1d164bedcb4399ce238f5f98fc0eefb7e50577981\",\"dweb:/ipfs/QmXRoFGUgfsaRkoPT5bxNMtSayKTQ8GZATLPXf69HcRA51\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"project:/contracts/Manager.sol\":{\"keccak256\":\"0x7cda39bc2e5b9a2049a4962d59f7b68a4484dcafac584c045fd5588c945a0c57\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://aa803d9cf56b9585770bea4a929b6c5eaa636abd7ad288ab529ddf13ba1218f0\",\"dweb:/ipfs/Qmf177zHR3NWsFcStiefviDELK1NPPJ2XYSTxjVzLnUmvY\"]},\"project:/contracts/models/DroneModel.sol\":{\"keccak256\":\"0x091c7c5571fe0f3372564da93afb0b2326a55365bae574040dee2f4f0c4b34ce\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://35dd50601e99e258b57f03f9725b52c68e2940babdabba9f4f99362a42a81987\",\"dweb:/ipfs/QmNPVAcaDr45nGckuPAvBMVrAd4EpQwoSNZvVZz3ystKT3\"]},\"project:/contracts/models/JobModel.sol\":{\"keccak256\":\"0xd2f56892697b476df2b03d73b077f6f407b2b1db614d13bb2cdc95fa38d6051d\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://56ed3db7a52935f1b1a6e65babfec38418903d32af38f891787c40f92a9a2779\",\"dweb:/ipfs/QmciDyyVPo2vrLZGijNbrUujACt1XdWA7g1pqBCsSFw8HD\"]},\"project:/contracts/models/PlotModel.sol\":{\"keccak256\":\"0x61f342b1a58afca7680ccbeb23805ce7b54ec13e3945bb936fc84d6226361653\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://e3b1529088eb3b68c92e2e781e50405b1a7f4e928a8007235e2fb07e52c12c7f\",\"dweb:/ipfs/QmS7H9VNAS3rqFUkSMsDG8ttdfSuqhxko8D5Nsf1qZLi5K\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -61,42 +61,42 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\nimport \"./models/JobModel.sol\";\nimport \"./models/DroneModel.sol\";\nimport \"./models/PlotModel.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\n\ninterface DroneInterface is DroneModel {\n    function getDrone(uint256 _index) external view returns (Drone memory);\n}\n\ninterface PlotInterface is PlotModel {\n    function getPlot(uint256 _index) external view returns (Plot memory);\n}\n\ncontract Manager is JobModel, PlotModel, DroneModel, Ownable {\n    DroneInterface droneContract;\n    PlotInterface plotContract;\n    uint256 private jobId;\n\n    mapping(address => bool) public isCompany;\n\n    constructor() {\n        jobId = 0;\n        droneContract = DroneInterface(\n            address(0x44E6106733Ba7cbf2ab3B29b20E2d7957689D4b0)\n        );\n        plotContract = PlotInterface(\n            address(0xD7C53A5aB24D0D5e083f50A2e520859Ccf0Fe76c)\n        );\n    }\n\n    Job[] public jobs;\n\n    modifier onlyCompanyAddress(address _address) {\n        require(\n            isCompany[_address] == true,\n            \"No tienes permisos para realizar esta accion\"\n        );\n        _;\n    }\n\n    function setCompanyAddress(address _address) external onlyOwner {\n        isCompany[_address] = true;\n    }\n\n    function deleteCompanyAddress(address _address) external onlyOwner {\n        isCompany[_address] = false;\n    }\n\n    function setDroneContractAddress(address _address) external onlyOwner {\n        droneContract = DroneInterface(_address);\n    }\n\n    function setPlotContractAddress(address _address) external onlyOwner {\n        plotContract = PlotInterface(_address);\n    }\n\n    function getJobs() external view returns (Job[] memory) {\n        return jobs;\n    }\n\n    function setPendingJob(uint256 _droneId, uint256 _plotId) public {\n        Plot memory currentPlot = plotContract.getPlot(_plotId);\n        Drone memory currentDrone = droneContract.getDrone(_droneId);\n        require(msg.sender == currentPlot.owner);\n        require(\n            currentPlot.allowedMaxFlightAltitude >=\n                currentDrone.maxFlightAltitude\n        );\n        require(\n            currentPlot.allowedMinFlightAltitude <=\n                currentDrone.minFlightAltitude\n        );\n\n        jobs.push(Job(jobId, _droneId, _plotId, false));\n        jobId++;\n    }\n\n    function acceptJob(uint256 _jobId, address _address)\n        external\n        onlyCompanyAddress(_address)\n    {\n        jobs[_jobId].approved = true;\n    }\n\n    function declineJob(uint256 _jobId, address _address)\n        external\n        onlyCompanyAddress(_address)\n    {\n        delete jobs[_jobId];\n        jobId--;\n    }\n}\n",
+  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\nimport \"./models/JobModel.sol\";\nimport \"./models/DroneModel.sol\";\nimport \"./models/PlotModel.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\n\ninterface DroneInterface is DroneModel {\n    function getDrone(uint256 _index) external view returns (Drone memory);\n}\n\ninterface PlotInterface is PlotModel {\n    function getPlot(uint256 _index) external view returns (Plot memory);\n}\n\ncontract Manager is JobModel, PlotModel, DroneModel, Ownable {\n    DroneInterface droneContract;\n    PlotInterface plotContract;\n    uint256 private jobId;\n\n    mapping(address => bool) public isCompany;\n\n    constructor() {\n        jobId = 0;\n        droneContract = DroneInterface(\n            address(0xAccf2b735a5Ad02E2Fa818B59eCaE3bd67BE558F)\n        );\n        plotContract = PlotInterface(\n            address(0xfE265164872e2A36F5a267A61195C4f523BBE0Dd)\n        );\n    }\n\n    Job[] public jobs;\n\n    modifier onlyCompanyAddress(address _address) {\n        require(\n            isCompany[_address] == true,\n            \"No tienes permisos para realizar esta accion\"\n        );\n        _;\n    }\n\n    function setCompanyAddress(address _address) external onlyOwner {\n        isCompany[_address] = true;\n    }\n\n    function deleteCompanyAddress(address _address) external onlyOwner {\n        isCompany[_address] = false;\n    }\n\n    function setDroneContractAddress(address _address) external onlyOwner {\n        droneContract = DroneInterface(_address);\n    }\n\n    function setPlotContractAddress(address _address) external onlyOwner {\n        plotContract = PlotInterface(_address);\n    }\n\n    function getJobs() external view returns (Job[] memory) {\n        return jobs;\n    }\n\n    function setPendingJob(uint256 _droneId, uint256 _plotId) public {\n        Plot memory currentPlot = plotContract.getPlot(_plotId);\n        Drone memory currentDrone = droneContract.getDrone(_droneId);\n        require(msg.sender == currentPlot.owner);\n        require(\n            currentPlot.allowedMaxFlightAltitude >=\n                currentDrone.maxFlightAltitude\n        );\n        require(\n            currentPlot.allowedMinFlightAltitude <=\n                currentDrone.minFlightAltitude\n        );\n\n        jobs.push(Job(jobId, _droneId, _plotId, false));\n        jobId++;\n    }\n\n    function acceptJob(uint256 _jobId, address _address)\n        external\n        onlyCompanyAddress(_address)\n    {\n        jobs[_jobId].approved = true;\n    }\n\n    function declineJob(uint256 _jobId, address _address)\n        external\n        onlyCompanyAddress(_address)\n    {\n        delete jobs[_jobId];\n        jobId--;\n    }\n}\n",
   "sourcePath": "/home/sergio/Documentos/sergio/projects/drones/smartcontracts/contracts/Manager.sol",
   "ast": {
     "absolutePath": "project:/contracts/Manager.sol",
     "exportedSymbols": {
       "Context": [
-        1448
+        126
       ],
       "DroneInterface": [
-        1778
+        143
       ],
       "DroneModel": [
-        2228
+        408
       ],
       "JobModel": [
-        2240
+        420
       ],
       "Manager": [
-        2020
+        385
       ],
       "Ownable": [
         104
       ],
       "PlotInterface": [
-        1789
+        154
       ],
       "PlotModel": [
-        2256
+        436
       ]
     },
-    "id": 2021,
+    "id": 386,
     "license": "UNLICENCED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1763,
+        "id": 128,
         "literals": [
           "solidity",
           ">=",
@@ -107,53 +107,53 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "39:32:11"
+        "src": "39:32:2"
       },
       {
         "absolutePath": "project:/contracts/models/JobModel.sol",
         "file": "./models/JobModel.sol",
-        "id": 1764,
+        "id": 129,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2021,
-        "sourceUnit": 2241,
-        "src": "73:31:11",
+        "scope": 386,
+        "sourceUnit": 421,
+        "src": "73:31:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "project:/contracts/models/DroneModel.sol",
         "file": "./models/DroneModel.sol",
-        "id": 1765,
+        "id": 130,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2021,
-        "sourceUnit": 2229,
-        "src": "105:33:11",
+        "scope": 386,
+        "sourceUnit": 409,
+        "src": "105:33:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "project:/contracts/models/PlotModel.sol",
         "file": "./models/PlotModel.sol",
-        "id": 1766,
+        "id": 131,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2021,
-        "sourceUnit": 2257,
-        "src": "139:32:11",
+        "scope": 386,
+        "sourceUnit": 437,
+        "src": "139:32:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
         "file": "@openzeppelin/contracts/access/Ownable.sol",
-        "id": 1767,
+        "id": 132,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2021,
+        "scope": 386,
         "sourceUnit": 105,
-        "src": "172:52:11",
+        "src": "172:52:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -162,52 +162,52 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 1768,
+              "id": 133,
               "name": "DroneModel",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2228,
-              "src": "254:10:11"
+              "referencedDeclaration": 408,
+              "src": "254:10:2"
             },
-            "id": 1769,
+            "id": 134,
             "nodeType": "InheritanceSpecifier",
-            "src": "254:10:11"
+            "src": "254:10:2"
           }
         ],
         "canonicalName": "DroneInterface",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 1778,
+        "id": 143,
         "linearizedBaseContracts": [
-          1778,
-          2228
+          143,
+          408
         ],
         "name": "DroneInterface",
-        "nameLocation": "236:14:11",
+        "nameLocation": "236:14:2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "dbd1be77",
-            "id": 1777,
+            "id": 142,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getDrone",
-            "nameLocation": "280:8:11",
+            "nameLocation": "280:8:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1772,
+              "id": 137,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1771,
+                  "id": 136,
                   "mutability": "mutable",
                   "name": "_index",
-                  "nameLocation": "297:6:11",
+                  "nameLocation": "297:6:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1777,
-                  "src": "289:14:11",
+                  "scope": 142,
+                  "src": "289:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -215,10 +215,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1770,
+                    "id": 135,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "289:7:11",
+                    "src": "289:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -227,58 +227,58 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "288:16:11"
+              "src": "288:16:2"
             },
             "returnParameters": {
-              "id": 1776,
+              "id": 141,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1775,
+                  "id": 140,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1777,
-                  "src": "328:12:11",
+                  "scope": 142,
+                  "src": "328:12:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Drone_$2227_memory_ptr",
+                    "typeIdentifier": "t_struct$_Drone_$407_memory_ptr",
                     "typeString": "struct DroneModel.Drone"
                   },
                   "typeName": {
-                    "id": 1774,
+                    "id": 139,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 1773,
+                      "id": 138,
                       "name": "Drone",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2227,
-                      "src": "328:5:11"
+                      "referencedDeclaration": 407,
+                      "src": "328:5:2"
                     },
-                    "referencedDeclaration": 2227,
-                    "src": "328:5:11",
+                    "referencedDeclaration": 407,
+                    "src": "328:5:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Drone_$2227_storage_ptr",
+                      "typeIdentifier": "t_struct$_Drone_$407_storage_ptr",
                       "typeString": "struct DroneModel.Drone"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "327:14:11"
+              "src": "327:14:2"
             },
-            "scope": 1778,
-            "src": "271:71:11",
+            "scope": 143,
+            "src": "271:71:2",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2021,
-        "src": "226:118:11",
+        "scope": 386,
+        "src": "226:118:2",
         "usedErrors": []
       },
       {
@@ -286,52 +286,52 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 1779,
+              "id": 144,
               "name": "PlotModel",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2256,
-              "src": "373:9:11"
+              "referencedDeclaration": 436,
+              "src": "373:9:2"
             },
-            "id": 1780,
+            "id": 145,
             "nodeType": "InheritanceSpecifier",
-            "src": "373:9:11"
+            "src": "373:9:2"
           }
         ],
         "canonicalName": "PlotInterface",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 1789,
+        "id": 154,
         "linearizedBaseContracts": [
-          1789,
-          2256
+          154,
+          436
         ],
         "name": "PlotInterface",
-        "nameLocation": "356:13:11",
+        "nameLocation": "356:13:2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "cfdd4fbd",
-            "id": 1788,
+            "id": 153,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getPlot",
-            "nameLocation": "398:7:11",
+            "nameLocation": "398:7:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1783,
+              "id": 148,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1782,
+                  "id": 147,
                   "mutability": "mutable",
                   "name": "_index",
-                  "nameLocation": "414:6:11",
+                  "nameLocation": "414:6:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1788,
-                  "src": "406:14:11",
+                  "scope": 153,
+                  "src": "406:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -339,10 +339,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1781,
+                    "id": 146,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "406:7:11",
+                    "src": "406:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -351,58 +351,58 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "405:16:11"
+              "src": "405:16:2"
             },
             "returnParameters": {
-              "id": 1787,
+              "id": 152,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1786,
+                  "id": 151,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1788,
-                  "src": "445:11:11",
+                  "scope": 153,
+                  "src": "445:11:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Plot_$2255_memory_ptr",
+                    "typeIdentifier": "t_struct$_Plot_$435_memory_ptr",
                     "typeString": "struct PlotModel.Plot"
                   },
                   "typeName": {
-                    "id": 1785,
+                    "id": 150,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 1784,
+                      "id": 149,
                       "name": "Plot",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2255,
-                      "src": "445:4:11"
+                      "referencedDeclaration": 435,
+                      "src": "445:4:2"
                     },
-                    "referencedDeclaration": 2255,
-                    "src": "445:4:11",
+                    "referencedDeclaration": 435,
+                    "src": "445:4:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Plot_$2255_storage_ptr",
+                      "typeIdentifier": "t_struct$_Plot_$435_storage_ptr",
                       "typeString": "struct PlotModel.Plot"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "444:13:11"
+              "src": "444:13:2"
             },
-            "scope": 1789,
-            "src": "389:69:11",
+            "scope": 154,
+            "src": "389:69:2",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2021,
-        "src": "346:114:11",
+        "scope": 386,
+        "src": "346:114:2",
         "usedErrors": []
       },
       {
@@ -410,99 +410,99 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 1790,
+              "id": 155,
               "name": "JobModel",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2240,
-              "src": "482:8:11"
+              "referencedDeclaration": 420,
+              "src": "482:8:2"
             },
-            "id": 1791,
+            "id": 156,
             "nodeType": "InheritanceSpecifier",
-            "src": "482:8:11"
+            "src": "482:8:2"
           },
           {
             "baseName": {
-              "id": 1792,
+              "id": 157,
               "name": "PlotModel",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2256,
-              "src": "492:9:11"
+              "referencedDeclaration": 436,
+              "src": "492:9:2"
             },
-            "id": 1793,
+            "id": 158,
             "nodeType": "InheritanceSpecifier",
-            "src": "492:9:11"
+            "src": "492:9:2"
           },
           {
             "baseName": {
-              "id": 1794,
+              "id": 159,
               "name": "DroneModel",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2228,
-              "src": "503:10:11"
+              "referencedDeclaration": 408,
+              "src": "503:10:2"
             },
-            "id": 1795,
+            "id": 160,
             "nodeType": "InheritanceSpecifier",
-            "src": "503:10:11"
+            "src": "503:10:2"
           },
           {
             "baseName": {
-              "id": 1796,
+              "id": 161,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 104,
-              "src": "515:7:11"
+              "src": "515:7:2"
             },
-            "id": 1797,
+            "id": 162,
             "nodeType": "InheritanceSpecifier",
-            "src": "515:7:11"
+            "src": "515:7:2"
           }
         ],
         "canonicalName": "Manager",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 2020,
+        "id": 385,
         "linearizedBaseContracts": [
-          2020,
+          385,
           104,
-          1448,
-          2228,
-          2256,
-          2240
+          126,
+          408,
+          436,
+          420
         ],
         "name": "Manager",
-        "nameLocation": "471:7:11",
+        "nameLocation": "471:7:2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 1800,
+            "id": 165,
             "mutability": "mutable",
             "name": "droneContract",
-            "nameLocation": "544:13:11",
+            "nameLocation": "544:13:2",
             "nodeType": "VariableDeclaration",
-            "scope": 2020,
-            "src": "529:28:11",
+            "scope": 385,
+            "src": "529:28:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_DroneInterface_$1778",
+              "typeIdentifier": "t_contract$_DroneInterface_$143",
               "typeString": "contract DroneInterface"
             },
             "typeName": {
-              "id": 1799,
+              "id": 164,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 1798,
+                "id": 163,
                 "name": "DroneInterface",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 1778,
-                "src": "529:14:11"
+                "referencedDeclaration": 143,
+                "src": "529:14:2"
               },
-              "referencedDeclaration": 1778,
-              "src": "529:14:11",
+              "referencedDeclaration": 143,
+              "src": "529:14:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DroneInterface_$1778",
+                "typeIdentifier": "t_contract$_DroneInterface_$143",
                 "typeString": "contract DroneInterface"
               }
             },
@@ -510,33 +510,33 @@
           },
           {
             "constant": false,
-            "id": 1803,
+            "id": 168,
             "mutability": "mutable",
             "name": "plotContract",
-            "nameLocation": "577:12:11",
+            "nameLocation": "577:12:2",
             "nodeType": "VariableDeclaration",
-            "scope": 2020,
-            "src": "563:26:11",
+            "scope": 385,
+            "src": "563:26:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_PlotInterface_$1789",
+              "typeIdentifier": "t_contract$_PlotInterface_$154",
               "typeString": "contract PlotInterface"
             },
             "typeName": {
-              "id": 1802,
+              "id": 167,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 1801,
+                "id": 166,
                 "name": "PlotInterface",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 1789,
-                "src": "563:13:11"
+                "referencedDeclaration": 154,
+                "src": "563:13:2"
               },
-              "referencedDeclaration": 1789,
-              "src": "563:13:11",
+              "referencedDeclaration": 154,
+              "src": "563:13:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_PlotInterface_$1789",
+                "typeIdentifier": "t_contract$_PlotInterface_$154",
                 "typeString": "contract PlotInterface"
               }
             },
@@ -544,13 +544,13 @@
           },
           {
             "constant": false,
-            "id": 1805,
+            "id": 170,
             "mutability": "mutable",
             "name": "jobId",
-            "nameLocation": "611:5:11",
+            "nameLocation": "611:5:2",
             "nodeType": "VariableDeclaration",
-            "scope": 2020,
-            "src": "595:21:11",
+            "scope": 385,
+            "src": "595:21:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -558,10 +558,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1804,
+              "id": 169,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "595:7:11",
+              "src": "595:7:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -572,13 +572,13 @@
           {
             "constant": false,
             "functionSelector": "a0406ce2",
-            "id": 1809,
+            "id": 174,
             "mutability": "mutable",
             "name": "isCompany",
-            "nameLocation": "655:9:11",
+            "nameLocation": "655:9:2",
             "nodeType": "VariableDeclaration",
-            "scope": 2020,
-            "src": "623:41:11",
+            "scope": 385,
+            "src": "623:41:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -586,28 +586,28 @@
               "typeString": "mapping(address => bool)"
             },
             "typeName": {
-              "id": 1808,
+              "id": 173,
               "keyType": {
-                "id": 1806,
+                "id": 171,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "631:7:11",
+                "src": "631:7:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "623:24:11",
+              "src": "623:24:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                 "typeString": "mapping(address => bool)"
               },
               "valueType": {
-                "id": 1807,
+                "id": 172,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "642:4:11",
+                "src": "642:4:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -618,24 +618,24 @@
           },
           {
             "body": {
-              "id": 1834,
+              "id": 199,
               "nodeType": "Block",
-              "src": "685:254:11",
+              "src": "685:254:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 1814,
+                    "id": 179,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1812,
+                      "id": 177,
                       "name": "jobId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1805,
-                      "src": "695:5:11",
+                      "referencedDeclaration": 170,
+                      "src": "695:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -645,46 +645,46 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "30",
-                      "id": 1813,
+                      "id": 178,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "703:1:11",
+                      "src": "703:1:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
                         "typeString": "int_const 0"
                       },
                       "value": "0"
                     },
-                    "src": "695:9:11",
+                    "src": "695:9:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1815,
+                  "id": 180,
                   "nodeType": "ExpressionStatement",
-                  "src": "695:9:11"
+                  "src": "695:9:2"
                 },
                 {
                   "expression": {
-                    "id": 1823,
+                    "id": 188,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1816,
+                      "id": 181,
                       "name": "droneContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1800,
-                      "src": "714:13:11",
+                      "referencedDeclaration": 165,
+                      "src": "714:13:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_DroneInterface_$1778",
+                        "typeIdentifier": "t_contract$_DroneInterface_$143",
                         "typeString": "contract DroneInterface"
                       }
                     },
@@ -695,20 +695,20 @@
                         {
                           "arguments": [
                             {
-                              "hexValue": "307834344536313036373333426137636266326162334232396232304532643739353736383944346230",
-                              "id": 1820,
+                              "hexValue": "307841636366326237333561354164303245324661383138423539654361453362643637424535353846",
+                              "id": 185,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "766:42:11",
+                              "src": "766:42:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
                                 "typeString": "address"
                               },
-                              "value": "0x44E6106733Ba7cbf2ab3B29b20E2d7957689D4b0"
+                              "value": "0xAccf2b735a5Ad02E2Fa818B59eCaE3bd67BE558F"
                             }
                           ],
                           "expression": {
@@ -718,26 +718,26 @@
                                 "typeString": "address"
                               }
                             ],
-                            "id": 1819,
+                            "id": 184,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "758:7:11",
+                            "src": "758:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
                             },
                             "typeName": {
-                              "id": 1818,
+                              "id": 183,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
-                              "src": "758:7:11",
+                              "src": "758:7:2",
                               "typeDescriptions": {}
                             }
                           },
-                          "id": 1821,
+                          "id": 186,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -745,7 +745,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "758:51:11",
+                          "src": "758:51:2",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -760,18 +760,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 1817,
+                        "id": 182,
                         "name": "DroneInterface",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1778,
-                        "src": "730:14:11",
+                        "referencedDeclaration": 143,
+                        "src": "730:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_DroneInterface_$1778_$",
+                          "typeIdentifier": "t_type$_t_contract$_DroneInterface_$143_$",
                           "typeString": "type(contract DroneInterface)"
                         }
                       },
-                      "id": 1822,
+                      "id": 187,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -779,39 +779,39 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "730:89:11",
+                      "src": "730:89:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_DroneInterface_$1778",
+                        "typeIdentifier": "t_contract$_DroneInterface_$143",
                         "typeString": "contract DroneInterface"
                       }
                     },
-                    "src": "714:105:11",
+                    "src": "714:105:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_DroneInterface_$1778",
+                      "typeIdentifier": "t_contract$_DroneInterface_$143",
                       "typeString": "contract DroneInterface"
                     }
                   },
-                  "id": 1824,
+                  "id": 189,
                   "nodeType": "ExpressionStatement",
-                  "src": "714:105:11"
+                  "src": "714:105:2"
                 },
                 {
                   "expression": {
-                    "id": 1832,
+                    "id": 197,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1825,
+                      "id": 190,
                       "name": "plotContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1803,
-                      "src": "829:12:11",
+                      "referencedDeclaration": 168,
+                      "src": "829:12:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PlotInterface_$1789",
+                        "typeIdentifier": "t_contract$_PlotInterface_$154",
                         "typeString": "contract PlotInterface"
                       }
                     },
@@ -822,20 +822,20 @@
                         {
                           "arguments": [
                             {
-                              "hexValue": "307844374335334135614232344430443565303833663530413265353230383539436366304665373663",
-                              "id": 1829,
+                              "hexValue": "307866453236353136343837326532413336463561323637413631313935433466353233424245304464",
+                              "id": 194,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "879:42:11",
+                              "src": "879:42:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
                                 "typeString": "address"
                               },
-                              "value": "0xD7C53A5aB24D0D5e083f50A2e520859Ccf0Fe76c"
+                              "value": "0xfE265164872e2A36F5a267A61195C4f523BBE0Dd"
                             }
                           ],
                           "expression": {
@@ -845,26 +845,26 @@
                                 "typeString": "address"
                               }
                             ],
-                            "id": 1828,
+                            "id": 193,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "871:7:11",
+                            "src": "871:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
                             },
                             "typeName": {
-                              "id": 1827,
+                              "id": 192,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
-                              "src": "871:7:11",
+                              "src": "871:7:2",
                               "typeDescriptions": {}
                             }
                           },
-                          "id": 1830,
+                          "id": 195,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -872,7 +872,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "871:51:11",
+                          "src": "871:51:2",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -887,18 +887,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 1826,
+                        "id": 191,
                         "name": "PlotInterface",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1789,
-                        "src": "844:13:11",
+                        "referencedDeclaration": 154,
+                        "src": "844:13:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_PlotInterface_$1789_$",
+                          "typeIdentifier": "t_type$_t_contract$_PlotInterface_$154_$",
                           "typeString": "type(contract PlotInterface)"
                         }
                       },
-                      "id": 1831,
+                      "id": 196,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -906,26 +906,26 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "844:88:11",
+                      "src": "844:88:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PlotInterface_$1789",
+                        "typeIdentifier": "t_contract$_PlotInterface_$154",
                         "typeString": "contract PlotInterface"
                       }
                     },
-                    "src": "829:103:11",
+                    "src": "829:103:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PlotInterface_$1789",
+                      "typeIdentifier": "t_contract$_PlotInterface_$154",
                       "typeString": "contract PlotInterface"
                     }
                   },
-                  "id": 1833,
+                  "id": 198,
                   "nodeType": "ExpressionStatement",
-                  "src": "829:103:11"
+                  "src": "829:103:2"
                 }
               ]
             },
-            "id": 1835,
+            "id": 200,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -933,19 +933,19 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1810,
+              "id": 175,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "682:2:11"
+              "src": "682:2:2"
             },
             "returnParameters": {
-              "id": 1811,
+              "id": 176,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "685:0:11"
+              "src": "685:0:2"
             },
-            "scope": 2020,
-            "src": "671:268:11",
+            "scope": 385,
+            "src": "671:268:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -953,42 +953,42 @@
           {
             "constant": false,
             "functionSelector": "180aedf3",
-            "id": 1839,
+            "id": 204,
             "mutability": "mutable",
             "name": "jobs",
-            "nameLocation": "958:4:11",
+            "nameLocation": "958:4:2",
             "nodeType": "VariableDeclaration",
-            "scope": 2020,
-            "src": "945:17:11",
+            "scope": 385,
+            "src": "945:17:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_Job_$2239_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_Job_$419_storage_$dyn_storage",
               "typeString": "struct JobModel.Job[]"
             },
             "typeName": {
               "baseType": {
-                "id": 1837,
+                "id": 202,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 1836,
+                  "id": 201,
                   "name": "Job",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 2239,
-                  "src": "945:3:11"
+                  "referencedDeclaration": 419,
+                  "src": "945:3:2"
                 },
-                "referencedDeclaration": 2239,
-                "src": "945:3:11",
+                "referencedDeclaration": 419,
+                "src": "945:3:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Job_$2239_storage_ptr",
+                  "typeIdentifier": "t_struct$_Job_$419_storage_ptr",
                   "typeString": "struct JobModel.Job"
                 }
               },
-              "id": 1838,
+              "id": 203,
               "nodeType": "ArrayTypeName",
-              "src": "945:5:11",
+              "src": "945:5:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_Job_$2239_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_Job_$419_storage_$dyn_storage_ptr",
                 "typeString": "struct JobModel.Job[]"
               }
             },
@@ -996,9 +996,9 @@
           },
           {
             "body": {
-              "id": 1853,
+              "id": 218,
               "nodeType": "Block",
-              "src": "1015:146:11",
+              "src": "1015:146:2",
               "statements": [
                 {
                   "expression": {
@@ -1008,32 +1008,32 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 1848,
+                        "id": 213,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "baseExpression": {
-                            "id": 1844,
+                            "id": 209,
                             "name": "isCompany",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1809,
-                            "src": "1046:9:11",
+                            "referencedDeclaration": 174,
+                            "src": "1046:9:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                               "typeString": "mapping(address => bool)"
                             }
                           },
-                          "id": 1846,
+                          "id": 211,
                           "indexExpression": {
-                            "id": 1845,
+                            "id": 210,
                             "name": "_address",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1841,
-                            "src": "1056:8:11",
+                            "referencedDeclaration": 206,
+                            "src": "1056:8:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -1044,7 +1044,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "1046:19:11",
+                          "src": "1046:19:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -1054,21 +1054,21 @@
                         "operator": "==",
                         "rightExpression": {
                           "hexValue": "74727565",
-                          "id": 1847,
+                          "id": 212,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "bool",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1069:4:11",
+                          "src": "1069:4:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           },
                           "value": "true"
                         },
-                        "src": "1046:27:11",
+                        "src": "1046:27:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1076,14 +1076,14 @@
                       },
                       {
                         "hexValue": "4e6f207469656e6573207065726d69736f732070617261207265616c697a6172206573746120616363696f6e",
-                        "id": 1849,
+                        "id": 214,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1087:46:11",
+                        "src": "1087:46:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_65f32c1395c1cd9e0156a8577075d5687098227a5b2096b7b54c8b52466284d0",
                           "typeString": "literal_string \"No tienes permisos para realizar esta accion\""
@@ -1102,7 +1102,7 @@
                           "typeString": "literal_string \"No tienes permisos para realizar esta accion\""
                         }
                       ],
-                      "id": 1843,
+                      "id": 208,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1110,13 +1110,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "1025:7:11",
+                      "src": "1025:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1850,
+                    "id": 215,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1124,41 +1124,41 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1025:118:11",
+                    "src": "1025:118:2",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1851,
+                  "id": 216,
                   "nodeType": "ExpressionStatement",
-                  "src": "1025:118:11"
+                  "src": "1025:118:2"
                 },
                 {
-                  "id": 1852,
+                  "id": 217,
                   "nodeType": "PlaceholderStatement",
-                  "src": "1153:1:11"
+                  "src": "1153:1:2"
                 }
               ]
             },
-            "id": 1854,
+            "id": 219,
             "name": "onlyCompanyAddress",
-            "nameLocation": "978:18:11",
+            "nameLocation": "978:18:2",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 1842,
+              "id": 207,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1841,
+                  "id": 206,
                   "mutability": "mutable",
                   "name": "_address",
-                  "nameLocation": "1005:8:11",
+                  "nameLocation": "1005:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1854,
-                  "src": "997:16:11",
+                  "scope": 219,
+                  "src": "997:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1166,10 +1166,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1840,
+                    "id": 205,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "997:7:11",
+                    "src": "997:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1179,46 +1179,46 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "996:18:11"
+              "src": "996:18:2"
             },
-            "src": "969:192:11",
+            "src": "969:192:2",
             "virtual": false,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 1867,
+              "id": 232,
               "nodeType": "Block",
-              "src": "1231:43:11",
+              "src": "1231:43:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 1865,
+                    "id": 230,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 1861,
+                        "id": 226,
                         "name": "isCompany",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1809,
-                        "src": "1241:9:11",
+                        "referencedDeclaration": 174,
+                        "src": "1241:9:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 1863,
+                      "id": 228,
                       "indexExpression": {
-                        "id": 1862,
+                        "id": 227,
                         "name": "_address",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1856,
-                        "src": "1251:8:11",
+                        "referencedDeclaration": 221,
+                        "src": "1251:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1229,7 +1229,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1241:19:11",
+                      "src": "1241:19:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1239,67 +1239,67 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "74727565",
-                      "id": 1864,
+                      "id": 229,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1263:4:11",
+                      "src": "1263:4:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
                       "value": "true"
                     },
-                    "src": "1241:26:11",
+                    "src": "1241:26:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 1866,
+                  "id": 231,
                   "nodeType": "ExpressionStatement",
-                  "src": "1241:26:11"
+                  "src": "1241:26:2"
                 }
               ]
             },
             "functionSelector": "4f63a772",
-            "id": 1868,
+            "id": 233,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 1859,
+                "id": 224,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 1858,
+                  "id": 223,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
-                  "src": "1221:9:11"
+                  "src": "1221:9:2"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1221:9:11"
+                "src": "1221:9:2"
               }
             ],
             "name": "setCompanyAddress",
-            "nameLocation": "1176:17:11",
+            "nameLocation": "1176:17:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1857,
+              "id": 222,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1856,
+                  "id": 221,
                   "mutability": "mutable",
                   "name": "_address",
-                  "nameLocation": "1202:8:11",
+                  "nameLocation": "1202:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1868,
-                  "src": "1194:16:11",
+                  "scope": 233,
+                  "src": "1194:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1307,10 +1307,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1855,
+                    "id": 220,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1194:7:11",
+                    "src": "1194:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1320,54 +1320,54 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1193:18:11"
+              "src": "1193:18:2"
             },
             "returnParameters": {
-              "id": 1860,
+              "id": 225,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1231:0:11"
+              "src": "1231:0:2"
             },
-            "scope": 2020,
-            "src": "1167:107:11",
+            "scope": 385,
+            "src": "1167:107:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 1881,
+              "id": 246,
               "nodeType": "Block",
-              "src": "1347:44:11",
+              "src": "1347:44:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 1879,
+                    "id": 244,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 1875,
+                        "id": 240,
                         "name": "isCompany",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1809,
-                        "src": "1357:9:11",
+                        "referencedDeclaration": 174,
+                        "src": "1357:9:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 1877,
+                      "id": 242,
                       "indexExpression": {
-                        "id": 1876,
+                        "id": 241,
                         "name": "_address",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1870,
-                        "src": "1367:8:11",
+                        "referencedDeclaration": 235,
+                        "src": "1367:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1378,7 +1378,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1357:19:11",
+                      "src": "1357:19:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1388,67 +1388,67 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "66616c7365",
-                      "id": 1878,
+                      "id": 243,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1379:5:11",
+                      "src": "1379:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
                       "value": "false"
                     },
-                    "src": "1357:27:11",
+                    "src": "1357:27:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 1880,
+                  "id": 245,
                   "nodeType": "ExpressionStatement",
-                  "src": "1357:27:11"
+                  "src": "1357:27:2"
                 }
               ]
             },
             "functionSelector": "a4925226",
-            "id": 1882,
+            "id": 247,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 1873,
+                "id": 238,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 1872,
+                  "id": 237,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
-                  "src": "1337:9:11"
+                  "src": "1337:9:2"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1337:9:11"
+                "src": "1337:9:2"
               }
             ],
             "name": "deleteCompanyAddress",
-            "nameLocation": "1289:20:11",
+            "nameLocation": "1289:20:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1871,
+              "id": 236,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1870,
+                  "id": 235,
                   "mutability": "mutable",
                   "name": "_address",
-                  "nameLocation": "1318:8:11",
+                  "nameLocation": "1318:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1882,
-                  "src": "1310:16:11",
+                  "scope": 247,
+                  "src": "1310:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1456,10 +1456,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1869,
+                    "id": 234,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1310:7:11",
+                    "src": "1310:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1469,42 +1469,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1309:18:11"
+              "src": "1309:18:2"
             },
             "returnParameters": {
-              "id": 1874,
+              "id": 239,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1347:0:11"
+              "src": "1347:0:2"
             },
-            "scope": 2020,
-            "src": "1280:111:11",
+            "scope": 385,
+            "src": "1280:111:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 1895,
+              "id": 260,
               "nodeType": "Block",
-              "src": "1467:57:11",
+              "src": "1467:57:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 1893,
+                    "id": 258,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1889,
+                      "id": 254,
                       "name": "droneContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1800,
-                      "src": "1477:13:11",
+                      "referencedDeclaration": 165,
+                      "src": "1477:13:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_DroneInterface_$1778",
+                        "typeIdentifier": "t_contract$_DroneInterface_$143",
                         "typeString": "contract DroneInterface"
                       }
                     },
@@ -1513,12 +1513,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 1891,
+                          "id": 256,
                           "name": "_address",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1884,
-                          "src": "1508:8:11",
+                          "referencedDeclaration": 249,
+                          "src": "1508:8:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1532,18 +1532,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 1890,
+                        "id": 255,
                         "name": "DroneInterface",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1778,
-                        "src": "1493:14:11",
+                        "referencedDeclaration": 143,
+                        "src": "1493:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_DroneInterface_$1778_$",
+                          "typeIdentifier": "t_type$_t_contract$_DroneInterface_$143_$",
                           "typeString": "type(contract DroneInterface)"
                         }
                       },
-                      "id": 1892,
+                      "id": 257,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1551,60 +1551,60 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1493:24:11",
+                      "src": "1493:24:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_DroneInterface_$1778",
+                        "typeIdentifier": "t_contract$_DroneInterface_$143",
                         "typeString": "contract DroneInterface"
                       }
                     },
-                    "src": "1477:40:11",
+                    "src": "1477:40:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_DroneInterface_$1778",
+                      "typeIdentifier": "t_contract$_DroneInterface_$143",
                       "typeString": "contract DroneInterface"
                     }
                   },
-                  "id": 1894,
+                  "id": 259,
                   "nodeType": "ExpressionStatement",
-                  "src": "1477:40:11"
+                  "src": "1477:40:2"
                 }
               ]
             },
             "functionSelector": "e6d6bca5",
-            "id": 1896,
+            "id": 261,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 1887,
+                "id": 252,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 1886,
+                  "id": 251,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
-                  "src": "1457:9:11"
+                  "src": "1457:9:2"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1457:9:11"
+                "src": "1457:9:2"
               }
             ],
             "name": "setDroneContractAddress",
-            "nameLocation": "1406:23:11",
+            "nameLocation": "1406:23:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1885,
+              "id": 250,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1884,
+                  "id": 249,
                   "mutability": "mutable",
                   "name": "_address",
-                  "nameLocation": "1438:8:11",
+                  "nameLocation": "1438:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1896,
-                  "src": "1430:16:11",
+                  "scope": 261,
+                  "src": "1430:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1612,10 +1612,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1883,
+                    "id": 248,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1430:7:11",
+                    "src": "1430:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1625,42 +1625,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1429:18:11"
+              "src": "1429:18:2"
             },
             "returnParameters": {
-              "id": 1888,
+              "id": 253,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1467:0:11"
+              "src": "1467:0:2"
             },
-            "scope": 2020,
-            "src": "1397:127:11",
+            "scope": 385,
+            "src": "1397:127:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 1909,
+              "id": 274,
               "nodeType": "Block",
-              "src": "1599:55:11",
+              "src": "1599:55:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 1907,
+                    "id": 272,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1903,
+                      "id": 268,
                       "name": "plotContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1803,
-                      "src": "1609:12:11",
+                      "referencedDeclaration": 168,
+                      "src": "1609:12:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PlotInterface_$1789",
+                        "typeIdentifier": "t_contract$_PlotInterface_$154",
                         "typeString": "contract PlotInterface"
                       }
                     },
@@ -1669,12 +1669,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 1905,
+                          "id": 270,
                           "name": "_address",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1898,
-                          "src": "1638:8:11",
+                          "referencedDeclaration": 263,
+                          "src": "1638:8:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1688,18 +1688,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 1904,
+                        "id": 269,
                         "name": "PlotInterface",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1789,
-                        "src": "1624:13:11",
+                        "referencedDeclaration": 154,
+                        "src": "1624:13:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_PlotInterface_$1789_$",
+                          "typeIdentifier": "t_type$_t_contract$_PlotInterface_$154_$",
                           "typeString": "type(contract PlotInterface)"
                         }
                       },
-                      "id": 1906,
+                      "id": 271,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1707,60 +1707,60 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1624:23:11",
+                      "src": "1624:23:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PlotInterface_$1789",
+                        "typeIdentifier": "t_contract$_PlotInterface_$154",
                         "typeString": "contract PlotInterface"
                       }
                     },
-                    "src": "1609:38:11",
+                    "src": "1609:38:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PlotInterface_$1789",
+                      "typeIdentifier": "t_contract$_PlotInterface_$154",
                       "typeString": "contract PlotInterface"
                     }
                   },
-                  "id": 1908,
+                  "id": 273,
                   "nodeType": "ExpressionStatement",
-                  "src": "1609:38:11"
+                  "src": "1609:38:2"
                 }
               ]
             },
             "functionSelector": "394ad0da",
-            "id": 1910,
+            "id": 275,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 1901,
+                "id": 266,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 1900,
+                  "id": 265,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
-                  "src": "1589:9:11"
+                  "src": "1589:9:2"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1589:9:11"
+                "src": "1589:9:2"
               }
             ],
             "name": "setPlotContractAddress",
-            "nameLocation": "1539:22:11",
+            "nameLocation": "1539:22:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1899,
+              "id": 264,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1898,
+                  "id": 263,
                   "mutability": "mutable",
                   "name": "_address",
-                  "nameLocation": "1570:8:11",
+                  "nameLocation": "1570:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1910,
-                  "src": "1562:16:11",
+                  "scope": 275,
+                  "src": "1562:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1768,10 +1768,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1897,
+                    "id": 262,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1562:7:11",
+                    "src": "1562:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1781,172 +1781,172 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1561:18:11"
+              "src": "1561:18:2"
             },
             "returnParameters": {
-              "id": 1902,
+              "id": 267,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1599:0:11"
+              "src": "1599:0:2"
             },
-            "scope": 2020,
-            "src": "1530:124:11",
+            "scope": 385,
+            "src": "1530:124:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 1919,
+              "id": 284,
               "nodeType": "Block",
-              "src": "1716:28:11",
+              "src": "1716:28:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 1917,
+                    "id": 282,
                     "name": "jobs",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1839,
-                    "src": "1733:4:11",
+                    "referencedDeclaration": 204,
+                    "src": "1733:4:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Job_$2239_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_Job_$419_storage_$dyn_storage",
                       "typeString": "struct JobModel.Job storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 1916,
-                  "id": 1918,
+                  "functionReturnParameters": 281,
+                  "id": 283,
                   "nodeType": "Return",
-                  "src": "1726:11:11"
+                  "src": "1726:11:2"
                 }
               ]
             },
             "functionSelector": "68581ebd",
-            "id": 1920,
+            "id": 285,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getJobs",
-            "nameLocation": "1669:7:11",
+            "nameLocation": "1669:7:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1911,
+              "id": 276,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1676:2:11"
+              "src": "1676:2:2"
             },
             "returnParameters": {
-              "id": 1916,
+              "id": 281,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1915,
+                  "id": 280,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1920,
-                  "src": "1702:12:11",
+                  "scope": 285,
+                  "src": "1702:12:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Job_$2239_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Job_$419_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct JobModel.Job[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 1913,
+                      "id": 278,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 1912,
+                        "id": 277,
                         "name": "Job",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 2239,
-                        "src": "1702:3:11"
+                        "referencedDeclaration": 419,
+                        "src": "1702:3:2"
                       },
-                      "referencedDeclaration": 2239,
-                      "src": "1702:3:11",
+                      "referencedDeclaration": 419,
+                      "src": "1702:3:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Job_$2239_storage_ptr",
+                        "typeIdentifier": "t_struct$_Job_$419_storage_ptr",
                         "typeString": "struct JobModel.Job"
                       }
                     },
-                    "id": 1914,
+                    "id": 279,
                     "nodeType": "ArrayTypeName",
-                    "src": "1702:5:11",
+                    "src": "1702:5:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Job_$2239_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Job_$419_storage_$dyn_storage_ptr",
                       "typeString": "struct JobModel.Job[]"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1701:14:11"
+              "src": "1701:14:2"
             },
-            "scope": 2020,
-            "src": "1660:84:11",
+            "scope": 385,
+            "src": "1660:84:2",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 1981,
+              "id": 346,
               "nodeType": "Block",
-              "src": "1815:521:11",
+              "src": "1815:521:2",
               "statements": [
                 {
                   "assignments": [
-                    1929
+                    294
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1929,
+                      "id": 294,
                       "mutability": "mutable",
                       "name": "currentPlot",
-                      "nameLocation": "1837:11:11",
+                      "nameLocation": "1837:11:2",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1981,
-                      "src": "1825:23:11",
+                      "scope": 346,
+                      "src": "1825:23:2",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Plot_$2255_memory_ptr",
+                        "typeIdentifier": "t_struct$_Plot_$435_memory_ptr",
                         "typeString": "struct PlotModel.Plot"
                       },
                       "typeName": {
-                        "id": 1928,
+                        "id": 293,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 1927,
+                          "id": 292,
                           "name": "Plot",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 2255,
-                          "src": "1825:4:11"
+                          "referencedDeclaration": 435,
+                          "src": "1825:4:2"
                         },
-                        "referencedDeclaration": 2255,
-                        "src": "1825:4:11",
+                        "referencedDeclaration": 435,
+                        "src": "1825:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Plot_$2255_storage_ptr",
+                          "typeIdentifier": "t_struct$_Plot_$435_storage_ptr",
                           "typeString": "struct PlotModel.Plot"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1934,
+                  "id": 299,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 1932,
+                        "id": 297,
                         "name": "_plotId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1924,
-                        "src": "1872:7:11",
+                        "referencedDeclaration": 289,
+                        "src": "1872:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1961,32 +1961,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 1930,
+                        "id": 295,
                         "name": "plotContract",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1803,
-                        "src": "1851:12:11",
+                        "referencedDeclaration": 168,
+                        "src": "1851:12:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PlotInterface_$1789",
+                          "typeIdentifier": "t_contract$_PlotInterface_$154",
                           "typeString": "contract PlotInterface"
                         }
                       },
-                      "id": 1931,
+                      "id": 296,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getPlot",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1788,
-                      "src": "1851:20:11",
+                      "referencedDeclaration": 153,
+                      "src": "1851:20:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_Plot_$2255_memory_ptr_$",
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_Plot_$435_memory_ptr_$",
                         "typeString": "function (uint256) view external returns (struct PlotModel.Plot memory)"
                       }
                     },
-                    "id": 1933,
+                    "id": 298,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1994,66 +1994,66 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1851:29:11",
+                    "src": "1851:29:2",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Plot_$2255_memory_ptr",
+                      "typeIdentifier": "t_struct$_Plot_$435_memory_ptr",
                       "typeString": "struct PlotModel.Plot memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1825:55:11"
+                  "src": "1825:55:2"
                 },
                 {
                   "assignments": [
-                    1937
+                    302
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1937,
+                      "id": 302,
                       "mutability": "mutable",
                       "name": "currentDrone",
-                      "nameLocation": "1903:12:11",
+                      "nameLocation": "1903:12:2",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1981,
-                      "src": "1890:25:11",
+                      "scope": 346,
+                      "src": "1890:25:2",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Drone_$2227_memory_ptr",
+                        "typeIdentifier": "t_struct$_Drone_$407_memory_ptr",
                         "typeString": "struct DroneModel.Drone"
                       },
                       "typeName": {
-                        "id": 1936,
+                        "id": 301,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 1935,
+                          "id": 300,
                           "name": "Drone",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 2227,
-                          "src": "1890:5:11"
+                          "referencedDeclaration": 407,
+                          "src": "1890:5:2"
                         },
-                        "referencedDeclaration": 2227,
-                        "src": "1890:5:11",
+                        "referencedDeclaration": 407,
+                        "src": "1890:5:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Drone_$2227_storage_ptr",
+                          "typeIdentifier": "t_struct$_Drone_$407_storage_ptr",
                           "typeString": "struct DroneModel.Drone"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1942,
+                  "id": 307,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 1940,
+                        "id": 305,
                         "name": "_droneId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1922,
-                        "src": "1941:8:11",
+                        "referencedDeclaration": 287,
+                        "src": "1941:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2068,32 +2068,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 1938,
+                        "id": 303,
                         "name": "droneContract",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1800,
-                        "src": "1918:13:11",
+                        "referencedDeclaration": 165,
+                        "src": "1918:13:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_DroneInterface_$1778",
+                          "typeIdentifier": "t_contract$_DroneInterface_$143",
                           "typeString": "contract DroneInterface"
                         }
                       },
-                      "id": 1939,
+                      "id": 304,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getDrone",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1777,
-                      "src": "1918:22:11",
+                      "referencedDeclaration": 142,
+                      "src": "1918:22:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_Drone_$2227_memory_ptr_$",
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_Drone_$407_memory_ptr_$",
                         "typeString": "function (uint256) view external returns (struct DroneModel.Drone memory)"
                       }
                     },
-                    "id": 1941,
+                    "id": 306,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2101,15 +2101,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1918:32:11",
+                    "src": "1918:32:2",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Drone_$2227_memory_ptr",
+                      "typeIdentifier": "t_struct$_Drone_$407_memory_ptr",
                       "typeString": "struct DroneModel.Drone memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1890:60:11"
+                  "src": "1890:60:2"
                 },
                 {
                   "expression": {
@@ -2119,32 +2119,32 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 1948,
+                        "id": 313,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 1944,
+                            "id": 309,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967281,
-                            "src": "1968:3:11",
+                            "src": "1968:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 1945,
+                          "id": 310,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
-                          "src": "1968:10:11",
+                          "src": "1968:10:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2154,32 +2154,32 @@
                         "operator": "==",
                         "rightExpression": {
                           "expression": {
-                            "id": 1946,
+                            "id": 311,
                             "name": "currentPlot",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1929,
-                            "src": "1982:11:11",
+                            "referencedDeclaration": 294,
+                            "src": "1982:11:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Plot_$2255_memory_ptr",
+                              "typeIdentifier": "t_struct$_Plot_$435_memory_ptr",
                               "typeString": "struct PlotModel.Plot memory"
                             }
                           },
-                          "id": 1947,
+                          "id": 312,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "owner",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2254,
-                          "src": "1982:17:11",
+                          "referencedDeclaration": 434,
+                          "src": "1982:17:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "1968:31:11",
+                        "src": "1968:31:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2193,7 +2193,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1943,
+                      "id": 308,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -2201,13 +2201,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "1960:7:11",
+                      "src": "1960:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1949,
+                    "id": 314,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2215,16 +2215,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1960:40:11",
+                    "src": "1960:40:2",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1950,
+                  "id": 315,
                   "nodeType": "ExpressionStatement",
-                  "src": "1960:40:11"
+                  "src": "1960:40:2"
                 },
                 {
                   "expression": {
@@ -2234,33 +2234,33 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1956,
+                        "id": 321,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 1952,
+                            "id": 317,
                             "name": "currentPlot",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1929,
-                            "src": "2031:11:11",
+                            "referencedDeclaration": 294,
+                            "src": "2031:11:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Plot_$2255_memory_ptr",
+                              "typeIdentifier": "t_struct$_Plot_$435_memory_ptr",
                               "typeString": "struct PlotModel.Plot memory"
                             }
                           },
-                          "id": 1953,
+                          "id": 318,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "allowedMaxFlightAltitude",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2250,
-                          "src": "2031:36:11",
+                          "referencedDeclaration": 430,
+                          "src": "2031:36:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -2270,32 +2270,32 @@
                         "operator": ">=",
                         "rightExpression": {
                           "expression": {
-                            "id": 1954,
+                            "id": 319,
                             "name": "currentDrone",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1937,
-                            "src": "2087:12:11",
+                            "referencedDeclaration": 302,
+                            "src": "2087:12:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Drone_$2227_memory_ptr",
+                              "typeIdentifier": "t_struct$_Drone_$407_memory_ptr",
                               "typeString": "struct DroneModel.Drone memory"
                             }
                           },
-                          "id": 1955,
+                          "id": 320,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "maxFlightAltitude",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2215,
-                          "src": "2087:30:11",
+                          "referencedDeclaration": 395,
+                          "src": "2087:30:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "2031:86:11",
+                        "src": "2031:86:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2309,7 +2309,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1951,
+                      "id": 316,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -2317,13 +2317,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "2010:7:11",
+                      "src": "2010:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1957,
+                    "id": 322,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2331,16 +2331,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2010:117:11",
+                    "src": "2010:117:2",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1958,
+                  "id": 323,
                   "nodeType": "ExpressionStatement",
-                  "src": "2010:117:11"
+                  "src": "2010:117:2"
                 },
                 {
                   "expression": {
@@ -2350,33 +2350,33 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1964,
+                        "id": 329,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 1960,
+                            "id": 325,
                             "name": "currentPlot",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1929,
-                            "src": "2158:11:11",
+                            "referencedDeclaration": 294,
+                            "src": "2158:11:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Plot_$2255_memory_ptr",
+                              "typeIdentifier": "t_struct$_Plot_$435_memory_ptr",
                               "typeString": "struct PlotModel.Plot memory"
                             }
                           },
-                          "id": 1961,
+                          "id": 326,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "allowedMinFlightAltitude",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2252,
-                          "src": "2158:36:11",
+                          "referencedDeclaration": 432,
+                          "src": "2158:36:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -2386,32 +2386,32 @@
                         "operator": "<=",
                         "rightExpression": {
                           "expression": {
-                            "id": 1962,
+                            "id": 327,
                             "name": "currentDrone",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1937,
-                            "src": "2214:12:11",
+                            "referencedDeclaration": 302,
+                            "src": "2214:12:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Drone_$2227_memory_ptr",
+                              "typeIdentifier": "t_struct$_Drone_$407_memory_ptr",
                               "typeString": "struct DroneModel.Drone memory"
                             }
                           },
-                          "id": 1963,
+                          "id": 328,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "minFlightAltitude",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2217,
-                          "src": "2214:30:11",
+                          "referencedDeclaration": 397,
+                          "src": "2214:30:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "2158:86:11",
+                        "src": "2158:86:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2425,7 +2425,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1959,
+                      "id": 324,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -2433,13 +2433,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "2137:7:11",
+                      "src": "2137:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1965,
+                    "id": 330,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2447,16 +2447,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2137:117:11",
+                    "src": "2137:117:2",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1966,
+                  "id": 331,
                   "nodeType": "ExpressionStatement",
-                  "src": "2137:117:11"
+                  "src": "2137:117:2"
                 },
                 {
                   "expression": {
@@ -2464,36 +2464,36 @@
                       {
                         "arguments": [
                           {
-                            "id": 1971,
+                            "id": 336,
                             "name": "jobId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1805,
-                            "src": "2279:5:11",
+                            "referencedDeclaration": 170,
+                            "src": "2279:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
                           {
-                            "id": 1972,
+                            "id": 337,
                             "name": "_droneId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1922,
-                            "src": "2286:8:11",
+                            "referencedDeclaration": 287,
+                            "src": "2286:8:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
                           {
-                            "id": 1973,
+                            "id": 338,
                             "name": "_plotId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1924,
-                            "src": "2296:7:11",
+                            "referencedDeclaration": 289,
+                            "src": "2296:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2501,14 +2501,14 @@
                           },
                           {
                             "hexValue": "66616c7365",
-                            "id": 1974,
+                            "id": 339,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "bool",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "2305:5:11",
+                            "src": "2305:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
                               "typeString": "bool"
@@ -2535,18 +2535,18 @@
                               "typeString": "bool"
                             }
                           ],
-                          "id": 1970,
+                          "id": 335,
                           "name": "Job",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2239,
-                          "src": "2275:3:11",
+                          "referencedDeclaration": 419,
+                          "src": "2275:3:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_Job_$2239_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_Job_$419_storage_ptr_$",
                             "typeString": "type(struct JobModel.Job storage pointer)"
                           }
                         },
-                        "id": 1975,
+                        "id": 340,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2554,10 +2554,10 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "2275:36:11",
+                        "src": "2275:36:2",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Job_$2239_memory_ptr",
+                          "typeIdentifier": "t_struct$_Job_$419_memory_ptr",
                           "typeString": "struct JobModel.Job memory"
                         }
                       }
@@ -2565,36 +2565,36 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Job_$2239_memory_ptr",
+                          "typeIdentifier": "t_struct$_Job_$419_memory_ptr",
                           "typeString": "struct JobModel.Job memory"
                         }
                       ],
                       "expression": {
-                        "id": 1967,
+                        "id": 332,
                         "name": "jobs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1839,
-                        "src": "2265:4:11",
+                        "referencedDeclaration": 204,
+                        "src": "2265:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Job_$2239_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Job_$419_storage_$dyn_storage",
                           "typeString": "struct JobModel.Job storage ref[] storage ref"
                         }
                       },
-                      "id": 1969,
+                      "id": 334,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "2265:9:11",
+                      "src": "2265:9:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Job_$2239_storage_$dyn_storage_ptr_$_t_struct$_Job_$2239_storage_$returns$__$bound_to$_t_array$_t_struct$_Job_$2239_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Job_$419_storage_$dyn_storage_ptr_$_t_struct$_Job_$419_storage_$returns$__$bound_to$_t_array$_t_struct$_Job_$419_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct JobModel.Job storage ref[] storage pointer,struct JobModel.Job storage ref)"
                       }
                     },
-                    "id": 1976,
+                    "id": 341,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2602,20 +2602,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2265:47:11",
+                    "src": "2265:47:2",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1977,
+                  "id": 342,
                   "nodeType": "ExpressionStatement",
-                  "src": "2265:47:11"
+                  "src": "2265:47:2"
                 },
                 {
                   "expression": {
-                    "id": 1979,
+                    "id": 344,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2623,14 +2623,14 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "2322:7:11",
+                    "src": "2322:7:2",
                     "subExpression": {
-                      "id": 1978,
+                      "id": 343,
                       "name": "jobId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1805,
-                      "src": "2322:5:11",
+                      "referencedDeclaration": 170,
+                      "src": "2322:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2641,33 +2641,33 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1980,
+                  "id": 345,
                   "nodeType": "ExpressionStatement",
-                  "src": "2322:7:11"
+                  "src": "2322:7:2"
                 }
               ]
             },
             "functionSelector": "783166d9",
-            "id": 1982,
+            "id": 347,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setPendingJob",
-            "nameLocation": "1759:13:11",
+            "nameLocation": "1759:13:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1925,
+              "id": 290,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1922,
+                  "id": 287,
                   "mutability": "mutable",
                   "name": "_droneId",
-                  "nameLocation": "1781:8:11",
+                  "nameLocation": "1781:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1982,
-                  "src": "1773:16:11",
+                  "scope": 347,
+                  "src": "1773:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2675,10 +2675,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1921,
+                    "id": 286,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1773:7:11",
+                    "src": "1773:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2688,13 +2688,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1924,
+                  "id": 289,
                   "mutability": "mutable",
                   "name": "_plotId",
-                  "nameLocation": "1799:7:11",
+                  "nameLocation": "1799:7:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1982,
-                  "src": "1791:15:11",
+                  "scope": 347,
+                  "src": "1791:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2702,10 +2702,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1923,
+                    "id": 288,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1791:7:11",
+                    "src": "1791:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2714,29 +2714,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1772:35:11"
+              "src": "1772:35:2"
             },
             "returnParameters": {
-              "id": 1926,
+              "id": 291,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1815:0:11"
+              "src": "1815:0:2"
             },
-            "scope": 2020,
-            "src": "1750:586:11",
+            "scope": 385,
+            "src": "1750:586:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1999,
+              "id": 364,
               "nodeType": "Block",
-              "src": "2453:45:11",
+              "src": "2453:45:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 1997,
+                    "id": 362,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2744,25 +2744,25 @@
                     "leftHandSide": {
                       "expression": {
                         "baseExpression": {
-                          "id": 1992,
+                          "id": 357,
                           "name": "jobs",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1839,
-                          "src": "2463:4:11",
+                          "referencedDeclaration": 204,
+                          "src": "2463:4:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_Job_$2239_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_Job_$419_storage_$dyn_storage",
                             "typeString": "struct JobModel.Job storage ref[] storage ref"
                           }
                         },
-                        "id": 1994,
+                        "id": 359,
                         "indexExpression": {
-                          "id": 1993,
+                          "id": 358,
                           "name": "_jobId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1984,
-                          "src": "2468:6:11",
+                          "referencedDeclaration": 349,
+                          "src": "2468:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -2773,21 +2773,21 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "2463:12:11",
+                        "src": "2463:12:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Job_$2239_storage",
+                          "typeIdentifier": "t_struct$_Job_$419_storage",
                           "typeString": "struct JobModel.Job storage ref"
                         }
                       },
-                      "id": 1995,
+                      "id": 360,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "approved",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2238,
-                      "src": "2463:21:11",
+                      "referencedDeclaration": 418,
+                      "src": "2463:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2797,81 +2797,81 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "74727565",
-                      "id": 1996,
+                      "id": 361,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "2487:4:11",
+                      "src": "2487:4:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
                       "value": "true"
                     },
-                    "src": "2463:28:11",
+                    "src": "2463:28:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 1998,
+                  "id": 363,
                   "nodeType": "ExpressionStatement",
-                  "src": "2463:28:11"
+                  "src": "2463:28:2"
                 }
               ]
             },
             "functionSelector": "d7d86727",
-            "id": 2000,
+            "id": 365,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 1989,
+                    "id": 354,
                     "name": "_address",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1986,
-                    "src": "2439:8:11",
+                    "referencedDeclaration": 351,
+                    "src": "2439:8:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   }
                 ],
-                "id": 1990,
+                "id": 355,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 1988,
+                  "id": 353,
                   "name": "onlyCompanyAddress",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1854,
-                  "src": "2420:18:11"
+                  "referencedDeclaration": 219,
+                  "src": "2420:18:2"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "2420:28:11"
+                "src": "2420:28:2"
               }
             ],
             "name": "acceptJob",
-            "nameLocation": "2351:9:11",
+            "nameLocation": "2351:9:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1987,
+              "id": 352,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1984,
+                  "id": 349,
                   "mutability": "mutable",
                   "name": "_jobId",
-                  "nameLocation": "2369:6:11",
+                  "nameLocation": "2369:6:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2000,
-                  "src": "2361:14:11",
+                  "scope": 365,
+                  "src": "2361:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2879,10 +2879,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1983,
+                    "id": 348,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2361:7:11",
+                    "src": "2361:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2892,13 +2892,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1986,
+                  "id": 351,
                   "mutability": "mutable",
                   "name": "_address",
-                  "nameLocation": "2385:8:11",
+                  "nameLocation": "2385:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2000,
-                  "src": "2377:16:11",
+                  "scope": 365,
+                  "src": "2377:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2906,10 +2906,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1985,
+                    "id": 350,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2377:7:11",
+                    "src": "2377:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2919,29 +2919,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2360:34:11"
+              "src": "2360:34:2"
             },
             "returnParameters": {
-              "id": 1991,
+              "id": 356,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2453:0:11"
+              "src": "2453:0:2"
             },
-            "scope": 2020,
-            "src": "2342:156:11",
+            "scope": 385,
+            "src": "2342:156:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 2018,
+              "id": 383,
               "nodeType": "Block",
-              "src": "2616:53:11",
+              "src": "2616:53:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 2013,
+                    "id": 378,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2949,28 +2949,28 @@
                     "nodeType": "UnaryOperation",
                     "operator": "delete",
                     "prefix": true,
-                    "src": "2626:19:11",
+                    "src": "2626:19:2",
                     "subExpression": {
                       "baseExpression": {
-                        "id": 2010,
+                        "id": 375,
                         "name": "jobs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1839,
-                        "src": "2633:4:11",
+                        "referencedDeclaration": 204,
+                        "src": "2633:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Job_$2239_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Job_$419_storage_$dyn_storage",
                           "typeString": "struct JobModel.Job storage ref[] storage ref"
                         }
                       },
-                      "id": 2012,
+                      "id": 377,
                       "indexExpression": {
-                        "id": 2011,
+                        "id": 376,
                         "name": "_jobId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2002,
-                        "src": "2638:6:11",
+                        "referencedDeclaration": 367,
+                        "src": "2638:6:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2981,9 +2981,9 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "2633:12:11",
+                      "src": "2633:12:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Job_$2239_storage",
+                        "typeIdentifier": "t_struct$_Job_$419_storage",
                         "typeString": "struct JobModel.Job storage ref"
                       }
                     },
@@ -2992,13 +2992,13 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2014,
+                  "id": 379,
                   "nodeType": "ExpressionStatement",
-                  "src": "2626:19:11"
+                  "src": "2626:19:2"
                 },
                 {
                   "expression": {
-                    "id": 2016,
+                    "id": 381,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3006,14 +3006,14 @@
                     "nodeType": "UnaryOperation",
                     "operator": "--",
                     "prefix": false,
-                    "src": "2655:7:11",
+                    "src": "2655:7:2",
                     "subExpression": {
-                      "id": 2015,
+                      "id": 380,
                       "name": "jobId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1805,
-                      "src": "2655:5:11",
+                      "referencedDeclaration": 170,
+                      "src": "2655:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3024,61 +3024,61 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 2017,
+                  "id": 382,
                   "nodeType": "ExpressionStatement",
-                  "src": "2655:7:11"
+                  "src": "2655:7:2"
                 }
               ]
             },
             "functionSelector": "7763f36e",
-            "id": 2019,
+            "id": 384,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 2007,
+                    "id": 372,
                     "name": "_address",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2004,
-                    "src": "2602:8:11",
+                    "referencedDeclaration": 369,
+                    "src": "2602:8:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   }
                 ],
-                "id": 2008,
+                "id": 373,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 2006,
+                  "id": 371,
                   "name": "onlyCompanyAddress",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1854,
-                  "src": "2583:18:11"
+                  "referencedDeclaration": 219,
+                  "src": "2583:18:2"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "2583:28:11"
+                "src": "2583:28:2"
               }
             ],
             "name": "declineJob",
-            "nameLocation": "2513:10:11",
+            "nameLocation": "2513:10:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2005,
+              "id": 370,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2002,
+                  "id": 367,
                   "mutability": "mutable",
                   "name": "_jobId",
-                  "nameLocation": "2532:6:11",
+                  "nameLocation": "2532:6:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2019,
-                  "src": "2524:14:11",
+                  "scope": 384,
+                  "src": "2524:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3086,10 +3086,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2001,
+                    "id": 366,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2524:7:11",
+                    "src": "2524:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3099,13 +3099,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2004,
+                  "id": 369,
                   "mutability": "mutable",
                   "name": "_address",
-                  "nameLocation": "2548:8:11",
+                  "nameLocation": "2548:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2019,
-                  "src": "2540:16:11",
+                  "scope": 384,
+                  "src": "2540:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3113,10 +3113,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2003,
+                    "id": 368,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2540:7:11",
+                    "src": "2540:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3126,27 +3126,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2523:34:11"
+              "src": "2523:34:2"
             },
             "returnParameters": {
-              "id": 2009,
+              "id": 374,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2616:0:11"
+              "src": "2616:0:2"
             },
-            "scope": 2020,
-            "src": "2504:165:11",
+            "scope": 385,
+            "src": "2504:165:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2021,
-        "src": "462:2209:11",
+        "scope": 386,
+        "src": "462:2209:2",
         "usedErrors": []
       }
     ],
-    "src": "39:2633:11"
+    "src": "39:2633:2"
   },
   "compiler": {
     "name": "solc",
@@ -3154,7 +3154,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-07-03T19:04:41.056Z",
+  "updatedAt": "2022-07-03T19:22:58.327Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

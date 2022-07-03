@@ -10,6 +10,7 @@ const formatDrones = async (dronesFromContract: any, contract: Contract) => {
   const drones = await Promise.all(
     dronesFromContract.map(async (drone: any) => {
       return {
+        id: drone.id.toNumber(),
         ownerName: drone.ownerName,
         owner: drone.owner,
         model: drone.model,

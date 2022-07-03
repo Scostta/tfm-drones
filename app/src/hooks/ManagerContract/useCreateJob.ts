@@ -1,3 +1,4 @@
+import { BigNumber } from 'ethers';
 import { useState } from 'react';
 import { Job } from '../../globalTypes';
 import { useManagerContract } from './useManagerContract';
@@ -10,13 +11,13 @@ export const useCreateJob = (callback?: () => void) => {
 
   const create = (job: Job) => {
     const { droneId, plotId } = job;
-    console.log(droneId, plotId);
+
     loadingSet(true);
     const { contract } = useManagerContract();
     contract
-      .setPendingJob(droneId, plotId)
+      .setPendingJob(BigNumber.from(droneId), BigNumber.from(plotId))
       .then((res: any) => res.wait())
-      // .then(() => getDrones())
+      .then((res: any) => console.log(res))
       .then((res: any) => {
         loadingSet(false);
         callback && callback();

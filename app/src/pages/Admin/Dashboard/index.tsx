@@ -3,6 +3,7 @@ import { Box, Flex } from '@chakra-ui/react';
 import { SectionContainer } from '../../../components/core/UI/SectionContainer';
 import { Drones } from './components/Drones';
 import { Aside } from './components/Aside';
+import { Jobs } from './components/Jobs';
 
 export const Dashboard: React.FC = () => {
   return (
@@ -10,6 +11,9 @@ export const Dashboard: React.FC = () => {
       <Box width="70%">
         <SectionContainer>
           <Drones />
+        </SectionContainer>
+        <SectionContainer>
+          <Jobs />
         </SectionContainer>
       </Box>
       <Aside />

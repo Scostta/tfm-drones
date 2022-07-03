@@ -22,6 +22,7 @@ export const PlotForm: React.FC<PlotFormProps> = ({ open, onClose }) => {
   };
 
   const onSubmit = () => {
+    console.log(values);
     create(values);
   };
 
@@ -51,10 +52,10 @@ export const PlotForm: React.FC<PlotFormProps> = ({ open, onClose }) => {
             name="pesticide"
             placeholder="choose one"
           >
-            <option value="pesticide-a">Pesticide A</option>
-            <option value="pesticide-b">Pesticide B</option>
-            <option value="pesticide-c">Pesticide C</option>
-            <option value="pesticide-d">Pesticide D</option>
+            <option value="pesticide A">Pesticide A</option>
+            <option value="pesticide B">Pesticide B</option>
+            <option value="pesticide C">Pesticide C</option>
+            <option value="pesticide D">Pesticide D</option>
           </Select>
         </FormControl>
         <FormControl>

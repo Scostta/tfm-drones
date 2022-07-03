@@ -24,7 +24,7 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
   };
 
   const onSubmit = () => {
-    create({ ...values, pesticides: ['pesticide A'] });
+    create({ ...values, pesticides: ['pesticide-a'] });
   };
 
   if (!open) return null;
@@ -61,10 +61,10 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
             name="pesticides"
             placeholder="choose one"
           >
-            <option value="pesticide-a">Pesticide A</option>
-            <option value="pesticide-b">Pesticide B</option>
-            <option value="pesticide-c">Pesticide C</option>
-            <option value="pesticide-d">Pesticide D</option>
+            <option value="pesticide A">Pesticide A</option>
+            <option value="pesticide B">Pesticide B</option>
+            <option value="pesticide C">Pesticide C</option>
+            <option value="pesticide D">Pesticide D</option>
           </Select>
         </FormControl>
         <FormControl>
