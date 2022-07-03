@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Drone } from '../../globalTypes';
 import { useDroneContract } from './useDroneContract';
-import { useGetUserDrones } from './useGetUserDrones';
+import { useGetDrones } from './useGetDrones';
 
 export const useCreateDrone = (callback?: () => void) => {
   const [error, errorSet] = useState<string | null>(null);
   const [loading, loadingSet] = useState(false);
-  const { getDrones } = useGetUserDrones();
+  const { getDrones } = useGetDrones();
 
   const cleanError = () => errorSet(null);
 

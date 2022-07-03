@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Button, Flex, Image } from '@chakra-ui/react';
-import { useGetUserDrones } from '../../../../../hooks/DroneContract/useGetUserDrones';
+import { useGetDrones } from '../../../../../hooks/DroneContract/useGetDrones';
 import DroneImage from '../../../../../assets/dronepng.png';
 import { Accordion } from '../../../../../components/core/UI/Accordion';
 import { Card } from '../../../../../components/core/UI/Card';
@@ -10,7 +10,7 @@ import { droneSelectedAtom } from '../../../../../store/drones';
 
 export const Drones: React.FC = () => {
   const [modalOpen, modalOpenSet] = useState<boolean>(false);
-  const { data = [], loading, error } = useGetUserDrones(true);
+  const { data = [], loading } = useGetDrones(true);
   const selectedDronSet = useUpdateAtom(droneSelectedAtom);
   console.log(data, '-------- FROM COMPONENT');
 
@@ -20,7 +20,11 @@ export const Drones: React.FC = () => {
       <Flex mb={2} justify="flex-end">
         <Button onClick={() => modalOpenSet(true)}>Register Dron</Button>
       </Flex>
-      <Accordion defaultOpen={true} isLoading={loading}>
+      <Accordion
+        title={<div>Total: {data.length}</div>}
+        defaultOpen={true}
+        isLoading={loading}
+      >
         {!data.length ? (
           <Flex justify="center" display={loading ? 'none' : 'flex'}>
             No hay drones registrados

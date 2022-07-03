@@ -1,23 +1,50 @@
-import React, { useState } from 'react';
-import { Box, Button, Flex, Image } from '@chakra-ui/react';
+import React from 'react';
+import { Box, Flex, Image, Spinner } from '@chakra-ui/react';
 import PlotImage from '../../../../assets/land.png';
 import { Card } from '../../../../components/core/UI/Card';
-import { PlotForm } from '../Form';
 import { useGetUserPlots } from '../../../../hooks/PlotContract/useGetUserPlots';
+import { useUpdateAtom } from 'jotai/utils';
+import { plotSelectedAtom } from '../../../../store/plots';
 
 export const Plots: React.FC = () => {
-  const [modalOpen, modalOpenSet] = useState<boolean>(false);
-  const { data = [], loading, error } = useGetUserPlots(true);
+  const { data = [], loading } = useGetUserPlots(true);
+  const selectedPlot = useUpdateAtom(plotSelectedAtom);
 
   return (
     <>
-      <PlotForm open={modalOpen} onClose={() => modalOpenSet(false)} />
-      <Flex mb={2} justify="flex-end">
-        <Button onClick={() => modalOpenSet(true)}>Register Plot</Button>
-      </Flex>
       <Flex flexWrap="wrap" justify="flex-start" gap={4}>
+        {loading && (
+          <Flex justify="center" width="100%">
+            <Spinner />
+          </Flex>
+        )}
         {data?.map((plot, i) => (
-          <Card key={i} cursor="pointer">
+          <Card
+            key={i}
+            cursor="pointer"
+            onClick={() => selectedPlot(plot)}
+            position="relative"
+          >
+            <Flex
+              direction="column"
+              justify="flex-end"
+              position="absolute"
+              top={0}
+              left={0}
+              backgroundColor="rgba(0,0,0, 0.7)"
+              width="100%"
+              height="100%"
+              color="white"
+              p={4}
+            >
+              <div>Owner: {plot?.ownerName}</div>
+              <div>
+                Allowed Max Flight Altitude: {plot?.allowedMaxFlightAltitude}
+              </div>
+              <div>
+                Allowed Min Flight Altitude: {plot?.allowedMinFlightAltitude}
+              </div>
+            </Flex>
             <Box>
               <Image width="256px" src={PlotImage} />
             </Box>

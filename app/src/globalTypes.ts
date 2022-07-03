@@ -1,4 +1,5 @@
 export type Drone = {
+  id?: number;
   ownerName?: string;
   model?: string;
   maxFlightAltitude?: number;
@@ -10,8 +11,15 @@ export type Drone = {
 };
 
 export type Plot = {
+  id?: number;
   ownerName?: string;
   allowedMaxFlightAltitude?: number;
   allowedMinFlightAltitude?: number;
   pesticide?: string;
+};
+
+export type Job = {
+  id?: number;
+  droneId: string;
+  plotId: string;
 };
