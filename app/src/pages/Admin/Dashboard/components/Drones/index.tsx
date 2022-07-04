@@ -12,7 +12,6 @@ export const Drones: React.FC = () => {
   const [modalOpen, modalOpenSet] = useState<boolean>(false);
   const { data = [], loading } = useGetDrones(true);
   const selectedDronSet = useUpdateAtom(droneSelectedAtom);
-  console.log(data, '-------- FROM COMPONENT');
 
   return (
     <>

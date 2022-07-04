@@ -9,11 +9,11 @@ const formatJobs = async (jobsFromContract: any, contract: Contract) => {
   if (!jobsFromContract || !contract) return [];
   const jobs = await Promise.all(
     jobsFromContract.map(async (job: any) => {
-      console.log(job);
       return {
         id: job.id.toNumber(),
         droneId: job.droneId.toNumber(),
         plotId: job.plotId.toNumber(),
+        approved: job.approved,
       };
     })
   );

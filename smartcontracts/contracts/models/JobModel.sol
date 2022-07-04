@@ -7,5 +7,6 @@ interface JobModel {
         uint256 droneId;
         uint256 plotId;
         bool approved;
+        address owner;
     }
 }

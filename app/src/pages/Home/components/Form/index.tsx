@@ -13,6 +13,22 @@ export const PlotForm: React.FC<PlotFormProps> = ({ open, onClose }) => {
   const [values, valuesSet] = useState({});
   const { error, loading, create, cleanError } = useCreatePlot(onClose);
 
+  const checkIsValid = () => {
+    const {
+      ownerName,
+      pesticide,
+      allowedMaxFlightAltitude,
+      allowedMinFlightAltitude,
+    } = values as any;
+
+    return (
+      ownerName?.length &&
+      pesticide?.length &&
+      allowedMaxFlightAltitude?.toString().length &&
+      allowedMinFlightAltitude?.toString().length
+    );
+  };
+
   const handleOnChange = (key: string, value: any) => {
     cleanError();
     valuesSet((v) => ({
@@ -35,6 +51,7 @@ export const PlotForm: React.FC<PlotFormProps> = ({ open, onClose }) => {
       onCancel={onClose}
       onModalAccept={onSubmit}
       isLoading={loading}
+      disabled={!checkIsValid()}
     >
       <Form>
         <FormControl>

@@ -4,8 +4,14 @@ import { SectionContainer } from '../../../components/core/UI/SectionContainer';
 import { Drones } from './components/Drones';
 import { Aside } from './components/Aside';
 import { Jobs } from './components/Jobs';
+import { useAtomValue } from 'jotai';
+import { isAdminAtom } from '../../../store/admin';
 
 export const Dashboard: React.FC = () => {
+  const isAdmin = useAtomValue(isAdminAtom);
+
+  if (!isAdmin) return null;
+
   return (
     <Flex width="100%" height="100%" justify="space-around">
       <Box width="70%">
@@ -13,7 +19,7 @@ export const Dashboard: React.FC = () => {
           <Drones />
         </SectionContainer>
         <SectionContainer>
-          <Jobs />
+          <Jobs isAdmin={true} />
         </SectionContainer>
       </Box>
       <Aside />

@@ -20,7 +20,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   return (
     <S.Accordion>
       <S.Title onClick={() => openSet(!open)}>
-        <Box>{title}</Box>
+        <Box width="100%">{title}</Box>
         {isLoading ? (
           <Spinner />
         ) : open ? (

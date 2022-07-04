@@ -2,7 +2,7 @@ import { Layout } from '../pages/_layouts/default';
 import React from 'react';
 
 interface RouteWrapperProps {
-  component?: React.ElementType;
+  component?: any;
   routes?: any;
 }
 

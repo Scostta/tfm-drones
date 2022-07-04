@@ -10,7 +10,6 @@ interface DroneModel {
         uint256 minFlightAltitude;
         string[] pesticides;
         uint256 cost;
-        uint8 velocity;
         address owner;
     }
 }

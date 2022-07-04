@@ -41,7 +41,9 @@ contract Manager is JobModel, PlotModel, DroneModel, Ownable {
         _;
     }
 
-    function setCompanyAddress(address _address) external onlyOwner {
+    function setCompanyAddress(address _address) external {
+        // Tendría que ser onlyOwner pero se quita para evitar problemas
+        // y que cualquier cuenta pueda probar las funciones de admin
         isCompany[_address] = true;
     }
 
@@ -74,7 +76,7 @@ contract Manager is JobModel, PlotModel, DroneModel, Ownable {
                 currentDrone.minFlightAltitude
         );
 
-        jobs.push(Job(jobId, _droneId, _plotId, false));
+        jobs.push(Job(jobId, _droneId, _plotId, false, msg.sender));
         jobId++;
     }
 

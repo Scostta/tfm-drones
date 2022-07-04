@@ -48,10 +48,6 @@ export const Aside: React.FC = () => {
                 <Text fontWeight="bold">Cost:</Text>
                 <Text>{selectedDron.cost}</Text>
               </Flex>
-              <Flex direction="column">
-                <Text fontWeight="bold">Velocity:</Text>
-                <Text>{selectedDron.velocity}</Text>
-              </Flex>
             </Flex>
           </Flex>
         )}

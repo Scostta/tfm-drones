@@ -32,7 +32,9 @@ export const ModalDrone: React.FC = () => {
   return (
     <Modal
       isOpen={true}
-      title={'Escoge un dron disponible para fumigar la parcela'}
+      title={
+        'Escoge un dron disponible para contratarlo y que fumige la parcela'
+      }
       onClose={() => selectedPlotSet(null)}
       isLoading={loading}
     >
@@ -51,7 +53,6 @@ export const ModalDrone: React.FC = () => {
                 <div>Max altitude: {drone.maxFlightAltitude}</div>
                 <div>Min altitude: {drone.minFlightAltitude}</div>
                 <div>Pesticides: {drone.pesticides?.join(', ')}</div>
-                <div>Velocity: {drone.velocity}</div>
                 <div>Cost: {drone.cost}</div>
               </Box>
             </Card>

@@ -25,14 +25,10 @@ export function useMetamask() {
     setIsConnected(!!window?.ethereum?._state?.accounts?.length);
   }, [window?.ethereum?._state?.accounts?.length]);
 
-  /***********************************************************/
-  /* Handle user accounts and accountsChanged (per EIP-1193) */
-  /***********************************************************/
   const handleAccountsChanged = useCallback(
     (accounts) => {
       let account = currentAccount;
       if (!accounts.length) {
-        // MetaMask is locked or the user has not connected any accounts
         setError(new Error(CUSTOM_ERRORS.NO_CONNECTED));
       } else if (accounts[0] !== currentAccount) {
         account = accounts[0];
@@ -43,9 +39,6 @@ export function useMetamask() {
     [currentAccount]
   );
 
-  /**********************************************************/
-  /* Handle chain (network) and chainChanged (per EIP-1193) */
-  /**********************************************************/
   const handleChainChanged = useCallback((chainId) => {
     const decimal = parseInt(chainId);
     if (CHAIN_NETWORKS[decimal]) {
@@ -62,9 +55,7 @@ export function useMetamask() {
     if (!window.ethereum) {
       return setError(new Error(CUSTOM_ERRORS.NO_METAMASK));
     }
-    /*****************************************/
-    /* Detect the MetaMask Ethereum provider */
-    /*****************************************/
+
     detectEthereumProvider().then((provider: any) => {
       if (!provider) {
         setError(new Error(CUSTOM_ERRORS.NO_METAMASK));
@@ -80,17 +71,11 @@ export function useMetamask() {
       .request({ method: ETH.ACCOUNTS })
       .then(handleAccountsChanged)
       .catch((err: any) => {
-        // Some unexpected error.
-        // For backwards compatibility reasons, if no accounts are available,
-        // eth_accounts will return an empty array.
         setError(err);
       });
     window.ethereum.on(ETH.ACCOUNTS_CHANGED, handleAccountsChanged);
   }, [handleChainChanged, handleAccountsChanged]);
 
-  /*********************************************/
-  /* Access the user's accounts (per EIP-1102) */
-  /*********************************************/
   const connect = useCallback(async () => {
     return window.ethereum
       .request({ method: ETH.REQ_ACCOUNTS })
@@ -98,8 +83,6 @@ export function useMetamask() {
       .catch((err: any) => {
         console.log(err);
         if (err.code === 4001) {
-          // EIP-1193 userRejectedRequest error
-          // If this happens, the user rejected the connection request.
           setError(new Error(CUSTOM_ERRORS.NO_CONNECTED));
         } else {
           setError(err);

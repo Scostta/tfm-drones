@@ -6,7 +6,6 @@ export type Drone = {
   minFlightAltitude?: number;
   pesticides?: string[];
   cost?: number;
-  velocity?: number;
   owner?: string;
 };
 
@@ -16,6 +15,7 @@ export type Plot = {
   allowedMaxFlightAltitude?: number;
   allowedMinFlightAltitude?: number;
   pesticide?: string;
+  owner?: string;
 };
 
 export type Job = {

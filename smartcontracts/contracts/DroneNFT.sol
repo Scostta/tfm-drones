@@ -29,7 +29,6 @@ contract DroneNFT is ERC721, DroneModel {
         uint256 _minFlightAltitude,
         string[] memory _pesticides,
         uint256 _cost,
-        uint8 _velocity
     ) external {
         address owner = msg.sender;
         drones.push(
@@ -41,7 +40,6 @@ contract DroneNFT is ERC721, DroneModel {
                 _minFlightAltitude,
                 _pesticides,
                 _cost,
-                _velocity,
                 owner
             )
         );

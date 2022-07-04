@@ -10,6 +10,7 @@ interface ModalProps {
   isLoading?: boolean;
   isOpen: boolean;
   onClose?: () => void;
+  disabled?: boolean;
 }
 
 export const Modal: React.FC<ModalProps> = ({
@@ -20,6 +21,7 @@ export const Modal: React.FC<ModalProps> = ({
   children,
   onCancel,
   onModalAccept,
+  disabled,
 }) => {
   if (!isOpen) return null;
   return (
@@ -48,7 +50,11 @@ export const Modal: React.FC<ModalProps> = ({
                   Cancel
                 </Button>
               )}
-              <Button isLoading={isLoading} onClick={onModalAccept}>
+              <Button
+                isDisabled={!!disabled}
+                isLoading={isLoading}
+                onClick={onModalAccept}
+              >
                 Save
               </Button>
             </HStack>

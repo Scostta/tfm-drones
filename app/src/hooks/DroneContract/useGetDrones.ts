@@ -12,13 +12,12 @@ const formatDrones = async (dronesFromContract: any, contract: Contract) => {
       return {
         id: drone.id.toNumber(),
         ownerName: drone.ownerName,
-        owner: drone.owner,
+        owner: drone.owner.toLowerCase(),
         model: drone.model,
         maxFlightAltitude: drone.maxFlightAltitude.toNumber(),
         minFlightAltitude: drone.minFlightAltitude.toNumber(),
         pesticides: drone.pesticides,
         cost: drone.cost.toNumber(),
-        velocity: drone.velocity,
       };
     })
   );
@@ -52,7 +51,7 @@ export const useGetDrones = (initialLoad?: boolean) => {
   };
 
   useEffect(() => {
-    if (initialLoad) {
+    if (initialLoad && currentAccount) {
       getDrones();
     }
   }, [currentAccount]);

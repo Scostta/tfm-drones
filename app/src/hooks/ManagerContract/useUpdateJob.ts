@@ -1,23 +1,43 @@
 import { BigNumber } from 'ethers';
 import { useState } from 'react';
-import { Job } from '../../globalTypes';
+import { useMetamask } from '../useMetamask';
 import { useGetJobs } from './useGetJobs';
 import { useManagerContract } from './useManagerContract';
 
-export const useCreateJob = (callback?: () => void) => {
+export const useUpdateJob = (callback?: () => void) => {
   const [error, errorSet] = useState<string | null>(null);
   const [loading, loadingSet] = useState(false);
+  const { currentAccount } = useMetamask();
   const { getJobs } = useGetJobs();
 
   const cleanError = () => errorSet(null);
 
-  const create = (job: Job) => {
-    const { droneId, plotId } = job;
-
+  const approve = (jobId?: number) => {
+    if (jobId === undefined) return;
     loadingSet(true);
     const { contract } = useManagerContract();
     contract
-      .setPendingJob(BigNumber.from(droneId), BigNumber.from(plotId))
+      .acceptJob(BigNumber.from(jobId), currentAccount)
+      .then((res: any) => res.wait())
+      .then(() => getJobs())
+      .then((res: any) => {
+        loadingSet(false);
+        callback && callback();
+      })
+      .catch((err: any) => {
+        console.log(err, 'ERR');
+        errorSet(err.code);
+        loadingSet(false);
+        callback && callback();
+      });
+  };
+
+  const decline = (jobId?: number) => {
+    if (jobId === undefined) return;
+    loadingSet(true);
+    const { contract } = useManagerContract();
+    contract
+      .declineJob(BigNumber.from(jobId), currentAccount)
       .then((res: any) => res.wait())
       .then(() => getJobs())
       .then((res: any) => {
@@ -35,7 +55,8 @@ export const useCreateJob = (callback?: () => void) => {
   return {
     error,
     loading,
-    create,
+    approve,
+    decline,
     cleanError,
     setError: errorSet,
   };

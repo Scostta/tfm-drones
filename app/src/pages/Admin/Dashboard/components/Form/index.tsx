@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-// import { Controller } from 'react-hook-form';
-// import { useUsersForm } from './useForm';
-import { Input, FormControl, FormLabel, Select } from '@chakra-ui/react';
+import { Input, FormControl, FormLabel } from '@chakra-ui/react';
 import { Form } from '../../../../../components/core/UI/Form';
 import { Modal } from '../../../../../components/core/UI/Modal';
 import { useCreateDrone } from '../../../../../hooks/DroneContract/useCreateDrone';
+import { Select } from 'chakra-react-select';
 
 type DroneFormProps = {
   open: boolean;
@@ -15,6 +14,26 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
   const [values, valuesSet] = useState({});
   const { error, loading, create, cleanError } = useCreateDrone(onClose);
 
+  const checkIsValid = () => {
+    const {
+      ownerName,
+      model,
+      maxFlightAltitude,
+      minFlightAltitude,
+      pesticides,
+      cost,
+    } = values as any;
+
+    return (
+      ownerName?.length &&
+      model?.length &&
+      maxFlightAltitude?.toString().length &&
+      minFlightAltitude?.toString().length &&
+      pesticides?.length &&
+      cost?.length
+    );
+  };
+
   const handleOnChange = (key: string, value: any) => {
     cleanError();
     valuesSet((v) => ({
@@ -24,7 +43,7 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
   };
 
   const onSubmit = () => {
-    create({ ...values, pesticides: ['pesticide-a'] });
+    create(values);
   };
 
   if (!open) return null;
@@ -36,6 +55,7 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
       onCancel={onClose}
       onModalAccept={onSubmit}
       isLoading={loading}
+      disabled={!checkIsValid()}
     >
       <Form>
         <FormControl>
@@ -57,15 +77,22 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
         <FormControl>
           <FormLabel>Accepted Pesticides</FormLabel>
           <Select
-            onChange={(e) => handleOnChange('pesticides', e.target.value)}
+            onChange={(value: any) =>
+              handleOnChange(
+                'pesticides',
+                value.map((v: any) => v.value)
+              )
+            }
             name="pesticides"
             placeholder="choose one"
-          >
-            <option value="pesticide A">Pesticide A</option>
-            <option value="pesticide B">Pesticide B</option>
-            <option value="pesticide C">Pesticide C</option>
-            <option value="pesticide D">Pesticide D</option>
-          </Select>
+            options={[
+              { label: 'Pesticide A', value: 'pesticide A' },
+              { label: 'Pesticide B', value: 'pesticide B' },
+              { label: 'Pesticide C', value: 'pesticide C' },
+              { label: 'Pesticide D', value: 'pesticide D' },
+            ]}
+            isMulti
+          />
         </FormControl>
         <FormControl>
           <FormLabel>Maximum Flight Altitude</FormLabel>
@@ -94,15 +121,6 @@ export const DroneForm: React.FC<DroneFormProps> = ({ open, onClose }) => {
           <Input
             onChange={(e) => handleOnChange('cost', e.target.value)}
             name="cost"
-            placeholder="number"
-            type="number"
-          />
-        </FormControl>
-        <FormControl>
-          <FormLabel>Velocity</FormLabel>
-          <Input
-            onChange={(e) => handleOnChange('velocity', e.target.value)}
-            name="velocity"
             placeholder="number"
             type="number"
           />

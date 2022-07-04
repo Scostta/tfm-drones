@@ -18,7 +18,6 @@ export const useCreateDrone = (callback?: () => void) => {
       minFlightAltitude,
       pesticides,
       cost,
-      velocity,
     } = drone;
 
     loadingSet(true);
@@ -30,8 +29,7 @@ export const useCreateDrone = (callback?: () => void) => {
         maxFlightAltitude,
         minFlightAltitude,
         pesticides,
-        cost,
-        velocity
+        cost
       )
       .then((res: any) => res.wait())
       .then(() => getDrones())

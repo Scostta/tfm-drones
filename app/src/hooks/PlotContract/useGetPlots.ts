@@ -9,11 +9,10 @@ const formatPlots = async (plotsFromContract: any, contract: Contract) => {
   if (!plotsFromContract || !contract) return [];
   const plots = await Promise.all(
     plotsFromContract.map(async (plot: any) => {
-      console.log(plot, '>>>> PLOT');
       return {
         id: plot.id.toNumber(),
         ownerName: plot.ownerName,
-        owner: plot.owner,
+        owner: plot.owner.toLowerCase(),
         allowedMaxFlightAltitude: plot.allowedMaxFlightAltitude.toNumber(),
         allowedMinFlightAltitude: plot.allowedMinFlightAltitude.toNumber(),
         pesticide: plot.acceptedPesticide,
@@ -50,7 +49,7 @@ export const useGetPlots = (initialLoad?: boolean) => {
   };
 
   useEffect(() => {
-    if (initialLoad) {
+    if (initialLoad && currentAccount) {
       getPlots();
     }
   }, [currentAccount]);
