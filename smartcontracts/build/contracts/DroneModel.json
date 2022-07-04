@@ -1,7 +1,7 @@
 {
   "contractName": "DroneModel",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/DroneModel.sol\":\"DroneModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/DroneModel.sol\":{\"keccak256\":\"0x091c7c5571fe0f3372564da93afb0b2326a55365bae574040dee2f4f0c4b34ce\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://35dd50601e99e258b57f03f9725b52c68e2940babdabba9f4f99362a42a81987\",\"dweb:/ipfs/QmNPVAcaDr45nGckuPAvBMVrAd4EpQwoSNZvVZz3ystKT3\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/DroneModel.sol\":\"DroneModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/DroneModel.sol\":{\"keccak256\":\"0x8c2f3a95de649dcb323ee56c5c40d803c4b5dc89821cdbb43f1d272c58342ed9\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://45f17cc67364cbee04540abcee6f21211560e6fd185ed7d655afe687b5fd2173\",\"dweb:/ipfs/QmNxbSLDrzdn3DrSv4b9oeAuBQwpAaZ25ZKF3htRJ3pweN\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -9,21 +9,21 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ninterface DroneModel {\n    struct Drone {\n        uint256 id;\n        string ownerName;\n        string model;\n        uint256 maxFlightAltitude;\n        uint256 minFlightAltitude;\n        string[] pesticides;\n        uint256 cost;\n        uint8 velocity;\n        address owner;\n    }\n}\n",
+  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ninterface DroneModel {\n    struct Drone {\n        uint256 id;\n        string ownerName;\n        string model;\n        uint256 maxFlightAltitude;\n        uint256 minFlightAltitude;\n        string[] pesticides;\n        uint256 cost;\n        address owner;\n    }\n}\n",
   "sourcePath": "/home/sergio/Documentos/sergio/projects/drones/smartcontracts/contracts/models/DroneModel.sol",
   "ast": {
     "absolutePath": "project:/contracts/models/DroneModel.sol",
     "exportedSymbols": {
       "DroneModel": [
-        2318
+        2237
       ]
     },
-    "id": 2319,
+    "id": 2238,
     "license": "UNLICENCED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2297,
+        "id": 2218,
         "literals": [
           "solidity",
           ">=",
@@ -34,7 +34,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "39:32:16"
+        "src": "39:32:14"
       },
       {
         "abstract": false,
@@ -43,27 +43,27 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": true,
-        "id": 2318,
+        "id": 2237,
         "linearizedBaseContracts": [
-          2318
+          2237
         ],
         "name": "DroneModel",
-        "nameLocation": "83:10:16",
+        "nameLocation": "83:10:14",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "DroneModel.Drone",
-            "id": 2317,
+            "id": 2236,
             "members": [
               {
                 "constant": false,
-                "id": 2299,
+                "id": 2220,
                 "mutability": "mutable",
                 "name": "id",
-                "nameLocation": "131:2:16",
+                "nameLocation": "131:2:14",
                 "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "123:10:16",
+                "scope": 2236,
+                "src": "123:10:14",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -71,10 +71,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2298,
+                  "id": 2219,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "123:7:16",
+                  "src": "123:7:14",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -84,13 +84,13 @@
               },
               {
                 "constant": false,
-                "id": 2301,
+                "id": 2222,
                 "mutability": "mutable",
                 "name": "ownerName",
-                "nameLocation": "150:9:16",
+                "nameLocation": "150:9:14",
                 "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "143:16:16",
+                "scope": 2236,
+                "src": "143:16:14",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -98,10 +98,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 2300,
+                  "id": 2221,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "143:6:16",
+                  "src": "143:6:14",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -111,13 +111,13 @@
               },
               {
                 "constant": false,
-                "id": 2303,
+                "id": 2224,
                 "mutability": "mutable",
                 "name": "model",
-                "nameLocation": "176:5:16",
+                "nameLocation": "176:5:14",
                 "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "169:12:16",
+                "scope": 2236,
+                "src": "169:12:14",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -125,10 +125,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 2302,
+                  "id": 2223,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "169:6:16",
+                  "src": "169:6:14",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -138,13 +138,13 @@
               },
               {
                 "constant": false,
-                "id": 2305,
+                "id": 2226,
                 "mutability": "mutable",
                 "name": "maxFlightAltitude",
-                "nameLocation": "199:17:16",
+                "nameLocation": "199:17:14",
                 "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "191:25:16",
+                "scope": 2236,
+                "src": "191:25:14",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -152,10 +152,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2304,
+                  "id": 2225,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "191:7:16",
+                  "src": "191:7:14",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -165,13 +165,13 @@
               },
               {
                 "constant": false,
-                "id": 2307,
+                "id": 2228,
                 "mutability": "mutable",
                 "name": "minFlightAltitude",
-                "nameLocation": "234:17:16",
+                "nameLocation": "234:17:14",
                 "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "226:25:16",
+                "scope": 2236,
+                "src": "226:25:14",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -179,10 +179,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2306,
+                  "id": 2227,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "226:7:16",
+                  "src": "226:7:14",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -192,13 +192,13 @@
               },
               {
                 "constant": false,
-                "id": 2310,
+                "id": 2231,
                 "mutability": "mutable",
                 "name": "pesticides",
-                "nameLocation": "270:10:16",
+                "nameLocation": "270:10:14",
                 "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "261:19:16",
+                "scope": 2236,
+                "src": "261:19:14",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -207,18 +207,18 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 2308,
+                    "id": 2229,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "261:6:16",
+                    "src": "261:6:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
                     }
                   },
-                  "id": 2309,
+                  "id": 2230,
                   "nodeType": "ArrayTypeName",
-                  "src": "261:8:16",
+                  "src": "261:8:14",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                     "typeString": "string[]"
@@ -228,13 +228,13 @@
               },
               {
                 "constant": false,
-                "id": 2312,
+                "id": 2233,
                 "mutability": "mutable",
                 "name": "cost",
-                "nameLocation": "298:4:16",
+                "nameLocation": "298:4:14",
                 "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "290:12:16",
+                "scope": 2236,
+                "src": "290:12:14",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -242,10 +242,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2311,
+                  "id": 2232,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "290:7:16",
+                  "src": "290:7:14",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -255,40 +255,13 @@
               },
               {
                 "constant": false,
-                "id": 2314,
-                "mutability": "mutable",
-                "name": "velocity",
-                "nameLocation": "318:8:16",
-                "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "312:14:16",
-                "stateVariable": false,
-                "storageLocation": "default",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_uint8",
-                  "typeString": "uint8"
-                },
-                "typeName": {
-                  "id": 2313,
-                  "name": "uint8",
-                  "nodeType": "ElementaryTypeName",
-                  "src": "312:5:16",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint8",
-                    "typeString": "uint8"
-                  }
-                },
-                "visibility": "internal"
-              },
-              {
-                "constant": false,
-                "id": 2316,
+                "id": 2235,
                 "mutability": "mutable",
                 "name": "owner",
-                "nameLocation": "344:5:16",
+                "nameLocation": "320:5:14",
                 "nodeType": "VariableDeclaration",
-                "scope": 2317,
-                "src": "336:13:16",
+                "scope": 2236,
+                "src": "312:13:14",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -296,10 +269,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 2315,
+                  "id": 2234,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "336:7:16",
+                  "src": "312:7:14",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -310,19 +283,19 @@
               }
             ],
             "name": "Drone",
-            "nameLocation": "107:5:16",
+            "nameLocation": "107:5:14",
             "nodeType": "StructDefinition",
-            "scope": 2318,
-            "src": "100:256:16",
+            "scope": 2237,
+            "src": "100:232:14",
             "visibility": "public"
           }
         ],
-        "scope": 2319,
-        "src": "73:285:16",
+        "scope": 2238,
+        "src": "73:261:14",
         "usedErrors": []
       }
     ],
-    "src": "39:320:16"
+    "src": "39:296:14"
   },
   "compiler": {
     "name": "solc",
@@ -330,7 +303,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-07-03T18:22:48.612Z",
+  "updatedAt": "2022-07-04T18:35:15.203Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

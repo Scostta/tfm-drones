@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Flex, Tag } from '@chakra-ui/react';
 import { useGetJobs } from '../../../../../hooks/ManagerContract/useGetJobs';
 import { Accordion } from '../../../../../components/core/UI/Accordion';
@@ -19,17 +19,23 @@ export const Jobs: React.FC<JobsProps> = ({ isAdmin }) => {
 
   const { approve } = useUpdateJob();
 
+  useEffect(() => {
+    if (!isAdmin) return filterBySelectedSet(false);
+  }, [isAdmin]);
+
   return (
     <>
       <Accordion
         title={
           <Flex justify="space-between" width="100%" pr={4}>
             <div>Total: {data.length}</div>
-            <Filter
-              label="Filtrar según el dron seleccionado"
-              value={filterBySelected}
-              onChange={filterBySelectedSet}
-            />
+            {isAdmin && (
+              <Filter
+                label="Filtrar según el dron seleccionado"
+                value={filterBySelected}
+                onChange={filterBySelectedSet}
+              />
+            )}
           </Flex>
         }
         defaultOpen={true}

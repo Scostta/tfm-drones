@@ -31,8 +31,7 @@ export const useCreateDrone = (callback?: () => void) => {
         pesticides,
         cost
       )
-      .then((res: any) => res.wait())
-      .then(() => getDrones())
+      .then((res: any) => res.wait().then(() => getDrones()))
       .then((res: any) => {
         loadingSet(false);
         callback && callback();

@@ -9,7 +9,7 @@ import { isAdminAtom } from '../../../../store/admin';
 export const Header: React.FC<StackProps> = () => {
   const { connect, currentAccount } = useMetamask();
   const isAdmin = useAtomValue(isAdminAtom);
-  const { setAdmin } = useAdmin();
+  const { setAdmin, loading } = useAdmin();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -22,7 +22,9 @@ export const Header: React.FC<StackProps> = () => {
     >
       <div>
         {!isAdmin ? (
-          <Button onClick={setAdmin}>Hazme Admin!</Button>
+          <Button isLoading={loading} onClick={setAdmin}>
+            Hazme Admin!
+          </Button>
         ) : (
           <div>
             {location.pathname !== '/admin' && (

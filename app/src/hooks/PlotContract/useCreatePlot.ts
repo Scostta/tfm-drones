@@ -27,8 +27,7 @@ export const useCreatePlot = (callback?: () => void) => {
         allowedMinFlightAltitude,
         pesticide
       )
-      .then((res: any) => res.wait())
-      .then(() => getPlots())
+      .then((res: any) => res.wait().then(() => getPlots()))
       .then((res: any) => {
         loadingSet(false);
         callback && callback();

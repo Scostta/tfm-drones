@@ -15,8 +15,9 @@ export const useAdmin = (initialLoad?: boolean) => {
     const { contract } = useManagerContract();
     contract
       .isCompany(currentAccount)
-      .then((res: any) => isAdminSet(res))
       .then((res: any) => {
+        console.log(res, '>>>>>>>>>>>>> RES');
+        isAdminSet(res);
         loadingSet(false);
       })
       .catch((err: any) => {
@@ -32,9 +33,8 @@ export const useAdmin = (initialLoad?: boolean) => {
     contract
       .setCompanyAddress(currentAccount)
       .then((res: any) => {
-        res.wait();
+        res.wait().then((r: any) => getIsAdmin());
       })
-      .then(() => getIsAdmin())
       .then((res: any) => {
         loadingSet(false);
       })

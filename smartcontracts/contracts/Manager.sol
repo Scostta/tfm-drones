@@ -21,14 +21,10 @@ contract Manager is JobModel, PlotModel, DroneModel, Ownable {
 
     mapping(address => bool) public isCompany;
 
-    constructor() {
+    constructor(address _droneAddress, address _plotAddress) {
         jobId = 0;
-        droneContract = DroneInterface(
-            address(0xAccf2b735a5Ad02E2Fa818B59eCaE3bd67BE558F)
-        );
-        plotContract = PlotInterface(
-            address(0xfE265164872e2A36F5a267A61195C4f523BBE0Dd)
-        );
+        droneContract = DroneInterface(address(_droneAddress));
+        plotContract = PlotInterface(address(_plotAddress));
     }
 
     Job[] public jobs;

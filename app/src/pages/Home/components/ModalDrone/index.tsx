@@ -45,9 +45,15 @@ export const ModalDrone: React.FC = () => {
               key={i}
               cursor="pointer"
               onClick={() => handleOnCreateJob(drone?.id, selectedPlot?.id)}
+              maxW="200px"
             >
               <Box>
-                <Image width="150px" height="150px" src={DroneImage}></Image>
+                <Image
+                  margin="auto"
+                  width="150px"
+                  height="150px"
+                  src={DroneImage}
+                ></Image>
               </Box>
               <Box>
                 <div>Max altitude: {drone.maxFlightAltitude}</div>

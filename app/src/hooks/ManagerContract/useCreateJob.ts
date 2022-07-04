@@ -18,8 +18,7 @@ export const useCreateJob = (callback?: () => void) => {
     const { contract } = useManagerContract();
     contract
       .setPendingJob(BigNumber.from(droneId), BigNumber.from(plotId))
-      .then((res: any) => res.wait())
-      .then(() => getJobs())
+      .then((res: any) => res.wait().then(() => getJobs()))
       .then((res: any) => {
         loadingSet(false);
         callback && callback();

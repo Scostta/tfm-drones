@@ -1,7 +1,7 @@
 {
   "contractName": "JobModel",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/JobModel.sol\":\"JobModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/JobModel.sol\":{\"keccak256\":\"0xd2f56892697b476df2b03d73b077f6f407b2b1db614d13bb2cdc95fa38d6051d\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://56ed3db7a52935f1b1a6e65babfec38418903d32af38f891787c40f92a9a2779\",\"dweb:/ipfs/QmciDyyVPo2vrLZGijNbrUujACt1XdWA7g1pqBCsSFw8HD\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/models/JobModel.sol\":\"JobModel\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/models/JobModel.sol\":{\"keccak256\":\"0xda4a119d051f3fe25d60f7e4a8d75bbab07fe6d1649fae983f874070d12e07ad\",\"license\":\"UNLICENCED\",\"urls\":[\"bzz-raw://4f0e0e09cebc3967acf91f1870a895d07faa25f098e32a3f9846a59f69531158\",\"dweb:/ipfs/Qmai8VinkqXiWicSnTU4GphsBmd5q8xwW9bGscMYhjzjdE\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -9,21 +9,21 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ninterface JobModel {\n    struct Job {\n        uint256 id;\n        uint256 droneId;\n        uint256 plotId;\n        bool approved;\n    }\n}\n",
+  "source": "// SPDX-License-Identifier: UNLICENCED\npragma solidity >=0.4.22 <0.9.0;\n\ninterface JobModel {\n    struct Job {\n        uint256 id;\n        uint256 droneId;\n        uint256 plotId;\n        bool approved;\n        address owner;\n    }\n}\n",
   "sourcePath": "/home/sergio/Documentos/sergio/projects/drones/smartcontracts/contracts/models/JobModel.sol",
   "ast": {
     "absolutePath": "project:/contracts/models/JobModel.sol",
     "exportedSymbols": {
       "JobModel": [
-        2240
+        2251
       ]
     },
-    "id": 2241,
+    "id": 2252,
     "license": "UNLICENCED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2230,
+        "id": 2239,
         "literals": [
           "solidity",
           ">=",
@@ -43,9 +43,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": true,
-        "id": 2240,
+        "id": 2251,
         "linearizedBaseContracts": [
-          2240
+          2251
         ],
         "name": "JobModel",
         "nameLocation": "83:8:15",
@@ -53,16 +53,16 @@
         "nodes": [
           {
             "canonicalName": "JobModel.Job",
-            "id": 2239,
+            "id": 2250,
             "members": [
               {
                 "constant": false,
-                "id": 2232,
+                "id": 2241,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "127:2:15",
                 "nodeType": "VariableDeclaration",
-                "scope": 2239,
+                "scope": 2250,
                 "src": "119:10:15",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -71,7 +71,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2231,
+                  "id": 2240,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "119:7:15",
@@ -84,12 +84,12 @@
               },
               {
                 "constant": false,
-                "id": 2234,
+                "id": 2243,
                 "mutability": "mutable",
                 "name": "droneId",
                 "nameLocation": "147:7:15",
                 "nodeType": "VariableDeclaration",
-                "scope": 2239,
+                "scope": 2250,
                 "src": "139:15:15",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -98,7 +98,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2233,
+                  "id": 2242,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "139:7:15",
@@ -111,12 +111,12 @@
               },
               {
                 "constant": false,
-                "id": 2236,
+                "id": 2245,
                 "mutability": "mutable",
                 "name": "plotId",
                 "nameLocation": "172:6:15",
                 "nodeType": "VariableDeclaration",
-                "scope": 2239,
+                "scope": 2250,
                 "src": "164:14:15",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -125,7 +125,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2235,
+                  "id": 2244,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "164:7:15",
@@ -138,12 +138,12 @@
               },
               {
                 "constant": false,
-                "id": 2238,
+                "id": 2247,
                 "mutability": "mutable",
                 "name": "approved",
                 "nameLocation": "193:8:15",
                 "nodeType": "VariableDeclaration",
-                "scope": 2239,
+                "scope": 2250,
                 "src": "188:13:15",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -152,7 +152,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 2237,
+                  "id": 2246,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "188:4:15",
@@ -162,22 +162,50 @@
                   }
                 },
                 "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2249,
+                "mutability": "mutable",
+                "name": "owner",
+                "nameLocation": "219:5:15",
+                "nodeType": "VariableDeclaration",
+                "scope": 2250,
+                "src": "211:13:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2248,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "211:7:15",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
               }
             ],
             "name": "Job",
             "nameLocation": "105:3:15",
             "nodeType": "StructDefinition",
-            "scope": 2240,
-            "src": "98:110:15",
+            "scope": 2251,
+            "src": "98:133:15",
             "visibility": "public"
           }
         ],
-        "scope": 2241,
-        "src": "73:137:15",
+        "scope": 2252,
+        "src": "73:160:15",
         "usedErrors": []
       }
     ],
-    "src": "39:172:15"
+    "src": "39:195:15"
   },
   "compiler": {
     "name": "solc",
@@ -185,7 +213,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-07-03T19:04:41.112Z",
+  "updatedAt": "2022-07-04T18:35:15.211Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
