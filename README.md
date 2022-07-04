@@ -39,4 +39,4 @@ Se ha hecho uso de una red local como ganache
 
 ## Enlaces
 
-- [manual de usuario]
+- [manual de usuario](https://github.com/Scostta/tfm-drones/blob/master/Manual.md)
