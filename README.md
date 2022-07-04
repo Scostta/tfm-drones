@@ -40,3 +40,9 @@ Se ha hecho uso de una red local como ganache
 ## Enlaces
 
 - [manual de usuario](https://github.com/Scostta/tfm-drones/blob/master/Manual.md)
+
+## Conclusiones
+
+He aprendido un montón realizando este proyecto, y me da rabia entregarlo a mitad..
+Entre mi trabajo y con la mudanza del final, las últimas clases y el proyecto se me ha hecho una bola que no he podido entregarlo como me gustaría, ya que me faltan muchas partes y soy conciente.
+
