@@ -39,5 +39,4 @@ Se ha hecho uso de una red local como ganache
 
 ## Enlaces
 
-- [manual de usuario] image.png
-- [diagrama de secuencia]
+- [manual de usuario]
